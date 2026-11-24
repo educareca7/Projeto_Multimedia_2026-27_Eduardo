@@ -7,7 +7,7 @@
 | **Ano Letivo** | 2026/2027 |
 | **Autor** | _Eduardo Gonçalves_ |
 | **Turma** | _12ºA2_ |
-| **Link da Aplicação Web** | _[Link]_ |
+| **Link da Aplicação Web** | _(https://github.com/educareca7/Projeto_Multimedia_2026-27_Eduardo.git)_ |
 
 ---
 
