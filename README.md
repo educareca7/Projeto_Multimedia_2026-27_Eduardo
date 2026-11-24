@@ -58,6 +58,22 @@ A aplicação é um servidor em **Python (Flask)** com uma interface no browser 
 - **Recordes:** no fim de cada partida, o servidor entrega um "bilhete" de uso único com a pontuação que ele próprio calculou. Só com esse bilhete se guarda um recorde, por isso não dá para inventar pontos.
 - **Testes automáticos:** 26 testes em Python (`unittest`) às regras e à API de cada jogo.
 
+**Porque há JavaScript se o projeto é em Python?**
+
+A percentagem de linguagens que o GitHub mostra mede o tamanho dos ficheiros, não o papel de cada linguagem. Este projeto foi organizado como as aplicações web reais: o **Python é o "cérebro"** e o **JavaScript é a "consola"**.
+
+- O browser só consegue executar JavaScript. Por isso, tudo o que tem de acontecer no ecrã 60 vezes por segundo tem de estar em JavaScript: desenhar o mapa, as salas e os lutadores, as animações, os sons e a leitura do rato e do teclado. Essa parte é grande em tamanho porque inclui o desenho dos cenários e o esqueleto animado dos lutadores, mas não decide nada do jogo.
+- Toda a lógica dos jogos está em Python, no servidor: sortear as partidas, guardar as soluções, verificar cada resposta, medir o tempo, calcular pontos, combos e rank, e guardar os recordes numa base de dados.
+- O browser nunca recebe as soluções. Por exemplo, na Última Ficha o JavaScript não sabe a senha nem os códigos e tem de perguntar ao Python se a tentativa está certa. No Detetive de Países, cada pista só é enviada pelo Python quando o jogador erra.
+
+| Parte do código | Linguagem | Linhas (aprox.) |
+|---|---|---|
+| Lógica dos jogos, API, base de dados e testes (`servidor/`, `testes/`, `app.py`) | Python | 1 440 |
+| Desenho, animação e som (cenários, esqueleto dos lutadores, salas em SVG, sons) | JavaScript | 4 800 |
+| Interface (ecrãs, botões, inventário, envio das ações ao servidor) | JavaScript | 3 900 |
+
+Um teste simples mostra a divisão. Se a pasta `site/` for aberta num servidor de ficheiros qualquer, sem o servidor Python, as páginas aparecem mas as partidas não começam e surge o aviso "Sem ligação ao servidor", porque não há ninguém para sortear as partidas nem verificar as respostas. Nas Artes Marciais só o treino livre funciona, porque é apenas animação.
+
 **Executar localmente**
 
 ```powershell
