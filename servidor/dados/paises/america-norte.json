@@ -1,0 +1,134 @@
+{
+    "continente": "América do Norte",
+    "descricao": "Inclui a América Central e as Caraíbas. id = código ISO 3166-1 numérico (igual ao do mapa). 6 pistas por país, da mais difícil/de nicho para a mais fácil.",
+    "paises": [
+        { "id": "840", "nome": "Estados Unidos", "continente": "América do Norte", "pistas": [
+            "O basquetebol foi inventado aqui, em 1891.",
+            "O jazz nasceu em Nova Orleães.",
+            "Os seus astronautas foram os primeiros a pisar a Lua, em 1969.",
+            "Hollywood é a capital do seu cinema.",
+            "A Estátua da Liberdade foi oferecida pela França.",
+            "Nova Iorque e a Casa Branca, em Washington."
+        ] },
+        { "id": "124", "nome": "Canadá", "continente": "América do Norte", "pistas": [
+            "A insulina foi descoberta aqui, em 1921.",
+            "A poutine leva batatas fritas, queijo e molho de carne.",
+            "Tem mais lagos do que todo o resto do mundo junto.",
+            "O hóquei no gelo é o seu desporto nacional de inverno.",
+            "Celine Dion e Justin Bieber nasceram aqui.",
+            "Xarope de ácer e uma folha de ácer vermelha na bandeira."
+        ] },
+        { "id": "484", "nome": "México", "continente": "América do Norte", "pistas": [
+            "Os astecas bebiam aqui o xocolatl, antepassado do chocolate.",
+            "A pintora Frida Kahlo nasceu aqui.",
+            "A música mariachi é Património Imaterial da Humanidade.",
+            "A capital foi construída sobre Tenochtitlan, a cidade dos astecas.",
+            "No Dia dos Mortos enfeitam-se altares com caveiras de açúcar.",
+            "Tacos, guacamole e a pirâmide de Chichén Itzá."
+        ] },
+        { "id": "320", "nome": "Guatemala", "continente": "América do Norte", "pistas": [
+            "Os «bonecos quitapenas», pequenos bonecos para pôr debaixo da almofada, são daqui.",
+            "Rigoberta Menchú, Nobel da Paz em 1992, nasceu aqui.",
+            "O lago Atitlán é rodeado de vulcões.",
+            "A cidade colonial de Antigua tem ruas de pedra e igrejas em ruínas.",
+            "A cidade maia de Tikal, na selva, apareceu em Star Wars.",
+            "A capital tem o mesmo nome do país."
+        ] },
+        { "id": "084", "nome": "Belize", "continente": "América do Norte", "pistas": [
+            "Tem o primeiro santuário de jaguares do mundo.",
+            "O Grande Buraco Azul é um sumidouro marinho famoso entre mergulhadores.",
+            "Tem a segunda maior barreira de coral do mundo.",
+            "É o único país da América Central com o inglês como língua oficial.",
+            "Chamava-se Honduras Britânicas.",
+            "A capital é Belmopan."
+        ] },
+        { "id": "340", "nome": "Honduras", "continente": "América do Norte", "pistas": [
+            "Em Yoro, todos os anos há relatos de uma «chuva de peixes».",
+            "As ruínas maias de Copán são famosas pelas esculturas.",
+            "A expressão «república das bananas» nasceu de descrições deste país.",
+            "Em 1969, entrou na «Guerra do Futebol» com El Salvador.",
+            "As ilhas da Baía, como Roatán, são famosas para mergulho.",
+            "A capital é Tegucigalpa."
+        ] },
+        { "id": "222", "nome": "El Salvador", "continente": "América do Norte", "pistas": [
+            "Óscar Romero, arcebispo assassinado em 1980, foi canonizado em 2018.",
+            "As pupusas, tortilhas recheadas, são o prato nacional.",
+            "Usa o dólar americano como moeda.",
+            "É o país mais pequeno da América Central.",
+            "Em 2021, foi o primeiro país a adotar a bitcoin como moeda legal.",
+            "A capital é San Salvador."
+        ] },
+        { "id": "558", "nome": "Nicarágua", "continente": "América do Norte", "pistas": [
+            "O poeta Rubén Darío, pai do modernismo, nasceu aqui.",
+            "No seu grande lago vivem tubarões que entram em água doce.",
+            "No vulcão Cerro Negro desce-se a cinza numa prancha.",
+            "Tem o maior lago da América Central.",
+            "A revolução sandinista triunfou aqui em 1979.",
+            "A capital é Manágua."
+        ] },
+        { "id": "188", "nome": "Costa Rica", "continente": "América do Norte", "pistas": [
+            "Aboliu o exército em 1948.",
+            "Produz quase toda a eletricidade com fontes renováveis.",
+            "Tem cerca de 5% da biodiversidade mundial.",
+            "O guarda-redes Keylor Navas nasceu aqui.",
+            "«Pura vida!» é o lema e o cumprimento nacional.",
+            "A capital é San José."
+        ] },
+        { "id": "591", "nome": "Panamá", "continente": "América do Norte", "pistas": [
+            "O cantor de salsa Rubén Blades nasceu aqui.",
+            "Manuel Noriega governou-o até à invasão americana de 1989.",
+            "Mariano Rivera, lendário lançador de basebol, nasceu aqui.",
+            "Usa o dólar americano, a que chama balboa.",
+            "O canal que liga o Atlântico ao Pacífico abriu em 1914.",
+            "A capital tem o mesmo nome do país."
+        ] },
+        { "id": "192", "nome": "Cuba", "continente": "América do Norte", "pistas": [
+            "O escritor Ernest Hemingway viveu aqui cerca de 20 anos.",
+            "O mojito e o daiquiri nasceram aqui.",
+            "O Buena Vista Social Club deu a conhecer a sua música ao mundo.",
+            "Os seus charutos e os carros antigos dos anos 50 são famosos.",
+            "Fidel Castro e Che Guevara lideraram aqui a revolução de 1959.",
+            "A capital é Havana."
+        ] },
+        { "id": "388", "nome": "Jamaica", "continente": "América do Norte", "pistas": [
+            "Ian Fleming escreveu aqui os livros de James Bond.",
+            "O café Blue Mountain, daqui, é dos mais caros do mundo.",
+            "A sua equipa de bobsleigh nos Jogos de 1988 inspirou o filme Cool Runnings.",
+            "Usain Bolt, o homem mais rápido do mundo, nasceu aqui.",
+            "Bob Marley e o reggae.",
+            "A capital é Kingston."
+        ] },
+        { "id": "332", "nome": "Haiti", "continente": "América do Norte", "pistas": [
+            "A Citadelle Laferrière é a maior fortaleza das Américas.",
+            "O vodu é uma religião muito praticada.",
+            "Em 1804, tornou-se a primeira república negra, após uma revolta de escravos.",
+            "Um sismo devastador destruiu grande parte da capital em 2010.",
+            "Partilha a ilha de Hispaniola com outro país.",
+            "A capital é Port-au-Prince."
+        ] },
+        { "id": "214", "nome": "República Dominicana", "continente": "América do Norte", "pistas": [
+            "A capital tem a catedral mais antiga das Américas.",
+            "Muitos dos melhores jogadores de basebol dos EUA nasceram aqui.",
+            "A bachata e o merengue nasceram aqui.",
+            "Cristóvão Colombo chegou a esta ilha em 1492.",
+            "As praias de Punta Cana atraem milhões de turistas.",
+            "A capital é Santo Domingo."
+        ] },
+        { "id": "044", "nome": "Bahamas", "continente": "América do Norte", "pistas": [
+            "Em Exuma há porcos que nadam no mar.",
+            "O Junkanoo é um desfile de carnaval no Natal e no Ano Novo.",
+            "Colombo desembarcou pela primeira vez nas Américas numa das suas ilhas, em 1492.",
+            "Piratas como Barba Negra usavam a sua capital como base.",
+            "É um arquipélago com cerca de 700 ilhas.",
+            "A capital é Nassau."
+        ] },
+        { "id": "780", "nome": "Trindade e Tobago", "continente": "América do Norte", "pistas": [
+            "O Pitch Lake é o maior depósito natural de asfalto do mundo.",
+            "O calypso e a soca nasceram aqui.",
+            "O steelpan, instrumento feito de bidões de petróleo, foi inventado aqui.",
+            "A rapper Nicki Minaj nasceu aqui.",
+            "É formado por duas ilhas principais.",
+            "A capital é Port of Spain."
+        ] }
+    ]
+}

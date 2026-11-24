@@ -1,0 +1,285 @@
+/* ===== Artes Marciais ===== */
+
+/* ---------- Escolha da arte ---------- */
+
+.selecao {
+    text-align: center;
+    padding-top: 1vh;
+}
+
+.selecao__titulo {
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    margin-bottom: 8px;
+}
+
+.selecao__dica {
+    margin: 0 0 18px;
+    color: var(--muted);
+}
+
+.selecao__grelha {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.arte-cartao {
+    --cor: var(--cyan);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, var(--panel-2), var(--panel));
+    color: var(--text);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.arte-cartao:hover,
+.arte-cartao:focus-visible {
+    transform: translateY(-4px);
+    border-color: var(--cor);
+    box-shadow: 0 0 0 1px var(--cor), 0 0 24px color-mix(in srgb, var(--cor) 40%, transparent);
+    outline: none;
+}
+
+.arte-cartao canvas {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-radius: var(--radius-sm);
+    background: #1b1d24;
+}
+
+.arte-cartao__nome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-pixel);
+    font-size: 0.8rem;
+    color: var(--cor);
+    text-shadow: 0 0 10px color-mix(in srgb, var(--cor) 60%, transparent);
+}
+
+.arte-cartao__nome kbd {
+    font-family: var(--font-sans);
+}
+
+.arte-cartao p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.arte-cartao__tecnicas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.arte-cartao__tecnicas li {
+    padding: 2px 8px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+/* ---------- Arena: palco + painel lateral (sem scroll em PC) ---------- */
+
+body.modo-arena .app-main {
+    padding-bottom: 0;
+}
+
+@media (min-width: 901px) {
+    body.modo-arena {
+        overflow: hidden;
+    }
+}
+
+.arena {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 14px;
+    min-height: 0;
+}
+
+.palco {
+    position: relative;
+    min-height: 0;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: #1b1d24;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+.palco canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* contagem decrescente */
+.aviso {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: clamp(2rem, 8vw, 4.5rem);
+    color: #fff;
+    -webkit-text-stroke: 2px rgba(30, 20, 10, 0.8);
+    text-shadow: 0 4px 0 rgba(30, 20, 10, 0.5);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.aviso.is-visivel {
+    opacity: 1;
+    animation: aviso-pulso 0.5s ease-out;
+}
+
+@keyframes aviso-pulso {
+    from {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* ---------- Painel de controlos ---------- */
+
+.painel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px 9px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, var(--panel-2), var(--panel));
+}
+
+.grupo__titulo {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.grupo__linha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+.grupo__lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.grupo--acoes {
+    margin-top: auto;
+}
+
+.grupo--acoes .btn {
+    width: 100%;
+    min-height: 40px;
+    padding: 0.5em 0.8em;
+    font-size: 0.85rem;
+}
+
+.grupo--acoes .btn--ghost {
+    min-height: 32px;
+    font-size: 0.78rem;
+}
+
+.grupo--acoes kbd {
+    margin-left: 4px;
+    font-size: 0.7rem;
+    background: rgba(0, 0, 0, 0.2);
+    color: inherit;
+    border-color: currentColor;
+}
+
+/* botão de técnica / combo / movimento */
+.tec {
+    --cor: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    min-height: 30px;
+    padding: 3px 6px 3px 7px;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--cor);
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text);
+    font: 600 0.8rem/1.1 var(--font-sans);
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.12s, transform 0.08s;
+}
+
+.tec:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.tec:active,
+.tec.is-premido {
+    transform: scale(0.98);
+    background: color-mix(in srgb, var(--cor) 30%, transparent);
+}
+
+.tec__nome {
+    flex: 1;
+    min-width: 0;
+}
+
+.tec kbd {
+    flex: none;
+    font-size: 0.68rem;
+}
+
+.tec--mover {
+    border-left-width: 1px;
+    justify-content: center;
+}
+
+.tec--mover .tec__nome {
+    flex: none;
+}
+
+/* ---------- Responsivo ---------- */
+
+@media (max-width: 900px) {
+    .selecao__grelha {
+        grid-template-columns: 1fr;
+    }
+
+    .arena {
+        grid-template-columns: 1fr;
+    }
+
+    .palco {
+        height: 56vh;
+    }
+
+}

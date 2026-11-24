@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#07080f">
+    <title>Artes Marciais · Salão Arcade</title>
+    <link rel="preload" href="../shared/fonts/silkscreen-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../shared/fonts/chakra-petch-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../shared/base.css">
+    <link rel="stylesheet" href="../shared/recordes.css">
+    <link rel="stylesheet" href="artes.css">
+</head>
+<body style="--accent: var(--magenta)">
+    <header class="topbar">
+        <a class="topbar__back" href="../">← Salão</a>
+        <span class="topbar__title pixel title-arcade">Artes Marciais</span>
+        <div class="topbar__hud" id="hud" hidden>
+            <span class="chip"><strong id="hud-arte">—</strong></span>
+            <span class="chip" id="hud-modo">Treino livre</span>
+            <span class="chip" data-desafio hidden>Tempo <strong id="hud-tempo">60</strong></span>
+            <span class="chip" data-desafio hidden>Pontos <strong id="hud-pontos">0</strong></span>
+            <span class="chip" id="hud-combo-chip" data-desafio hidden>Combo <strong id="hud-combo">×1</strong></span>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <!-- ===== Intro ===== -->
+        <section data-screen="intro" class="screen-card">
+            <p class="eyebrow">Máquina Nº 02</p>
+            <h1 class="title-arcade">Artes Marciais</h1>
+            <p>Escolhe uma arte marcial, treina as técnicas e os combos e depois enfrenta o desafio de 60 segundos.</p>
+            <ol class="how-to" data-passos>
+                <li>
+                    <svg class="rule-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="6" y="10" width="10" height="28" rx="2"/><rect x="19" y="10" width="10" height="28" rx="2"/><rect x="32" y="10" width="10" height="28" rx="2"/>
+                        <path class="alt" d="M21 25l3 3 5-7"/>
+                    </svg>
+                    Escolhe <strong>boxe</strong>, <strong>muay thai</strong> ou <strong>taekwondo</strong>. Cada arte tem a sua guarda, técnicas, combos e cenário.
+                </li>
+                <li>
+                    <svg class="rule-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="4" y="14" width="40" height="22" rx="4"/><path d="M11 25h8M15 21v8"/>
+                        <circle class="alt" cx="31" cy="23" r="2.2" fill="currentColor"/><circle class="alt" cx="37" cy="27" r="2.2" fill="currentColor"/>
+                    </svg>
+                    No <strong>treino</strong>, usa os botões ou o teclado: <strong>Z X C V B N</strong> e <strong>Q W E</strong> para técnicas (há giratórios e esquivas), <strong>1</strong> a <strong>6</strong> para combos e <strong>← →</strong> para te moveres.
+                </li>
+                <li>
+                    <svg class="rule-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                        <circle cx="24" cy="24" r="15"/><circle cx="24" cy="24" r="8"/>
+                        <circle class="alt" cx="24" cy="24" r="2.4" fill="currentColor"/>
+                    </svg>
+                    No <strong>desafio de 60 segundos</strong>, aparecem alvos a alturas e distâncias diferentes. Cada alvo diz qual o golpe que pede.
+                </li>
+                <li>
+                    <svg class="rule-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 40h36"/><ellipse cx="18" cy="40" rx="8" ry="2.5"/>
+                        <path class="alt" d="M30 30l8-8m0 0h-6m6 0v6"/>
+                    </svg>
+                    Põe-te na <strong>marca do chão</strong> à distância certa e usa o <strong>golpe pedido</strong>. Longe demais ou com a técnica errada não conta.
+                </li>
+                <li>
+                    <svg class="rule-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                        <path d="M10 14l10 20M20 14L10 34"/>
+                        <path class="alt" d="M27 15c3-3 11-3 11 4 0 4-4 5-8 6 5 1 9 3 9 7 0 6-9 6-12 3"/>
+                    </svg>
+                    Acertos seguidos aumentam o <strong>combo</strong> até <strong>×3</strong>, e acertar depressa dá bónus. Se deixares um alvo fugir, o combo volta a ×1.
+                </li>
+            </ol>
+            <div class="actions">
+                <button class="btn btn--primary" type="button" data-action="start" data-autofocus>Escolher arte ▸</button>
+            </div>
+        </section>
+
+        <!-- ===== Jogo ===== -->
+        <section data-screen="game" hidden>
+            <!-- escolha da arte -->
+            <div class="selecao" id="selecao">
+                <h2 class="selecao__titulo title-arcade">Escolhe a tua arte</h2>
+                <p class="selecao__dica">Clica numa arte ou usa as teclas <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd>.</p>
+                <div class="selecao__grelha" id="selecao-grelha"></div>
+            </div>
+
+            <!-- arena -->
+            <div class="arena" id="arena" hidden>
+                <div class="palco">
+                    <canvas id="palco" aria-label="Lutador e alvos"></canvas>
+                    <div class="aviso pixel" id="aviso" aria-live="assertive"></div>
+                </div>
+
+                <aside class="painel" aria-label="Controlos">
+                    <div class="grupo">
+                        <span class="grupo__titulo">Mover</span>
+                        <div class="grupo__linha">
+                            <button type="button" class="tec tec--mover" data-mover="-1"><span class="tec__nome">◀ Recuar</span><kbd>←</kbd></button>
+                            <button type="button" class="tec tec--mover" data-mover="1"><span class="tec__nome">Avançar ▶</span><kbd>→</kbd></button>
+                        </div>
+                    </div>
+                    <div class="grupo">
+                        <span class="grupo__titulo">Técnicas</span>
+                        <div class="grupo__lista" id="botoes-tecnicas"></div>
+                    </div>
+                    <div class="grupo">
+                        <span class="grupo__titulo">Combos</span>
+                        <div class="grupo__lista" id="botoes-combos"></div>
+                    </div>
+                    <div class="grupo grupo--acoes">
+                        <button type="button" class="btn btn--primary" id="btn-desafio">Começar desafio <kbd>Enter</kbd></button>
+                        <button type="button" class="btn btn--ghost" id="btn-trocar">Trocar arte</button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ===== Resultado ===== -->
+        <section data-screen="result" class="screen-card screen-card--wide" hidden>
+            <p class="eyebrow" id="final-arte">Fim do desafio</p>
+            <h1 class="title-arcade">Pontuação</h1>
+            <strong class="big-score" id="final-score">0</strong>
+            <div class="stat-grid" id="final-stats"></div>
+            <div id="final-recorde" hidden></div>
+            <div class="actions">
+                <button class="btn btn--primary" type="button" data-action="again" data-autofocus>Jogar de novo</button>
+                <a class="btn btn--ghost" href="../">Sair</a>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="artes.js"></script>
+</body>
+</html>

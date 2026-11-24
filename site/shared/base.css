@@ -1,0 +1,667 @@
+/* =========================================================
+   Salão Arcade — estilo base partilhado por todas as páginas
+   Arcade neon: fundo escuro, ciano + magenta, scanlines subtis.
+   ========================================================= */
+
+/* Títulos: Silkscreen Bold (OFL). size-adjust iguala o tamanho visual a uma
+   fonte pixel "grande" (a Press Start 2P desenha mal Í/Ú/Á). */
+@font-face {
+    font-family: "Arcade Pixel";
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    size-adjust: 150%;
+    src: url("fonts/silkscreen-700-latin.woff2") format("woff2");
+}
+
+/* Texto: Chakra Petch (OFL), sans angular com ar de HUD. */
+@font-face {
+    font-family: "Chakra Petch";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("fonts/chakra-petch-400-latin.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Chakra Petch";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("fonts/chakra-petch-600-latin.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Chakra Petch";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("fonts/chakra-petch-700-latin.woff2") format("woff2");
+}
+
+:root {
+    color-scheme: dark;
+
+    /* Cores */
+    --bg: #07080f;
+    --bg-2: #0c0f1d;
+    --panel: #11142a;
+    --panel-2: #171b36;
+    --line: rgba(160, 175, 255, 0.14);
+    --text: #e9ecff;
+    --muted: #8d93b8;
+    --cyan: #22e8ff;
+    --magenta: #ff2bd6;
+    --amber: #ffc53d;
+    --danger: #ff4d6d;
+    --good: #3dffa8;
+    --accent: var(--cyan);
+
+    /* Tipografia */
+    --font-pixel: "Arcade Pixel", ui-monospace, "Cascadia Mono", Consolas, monospace;
+    --font-sans: "Chakra Petch", system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+
+    /* Forma */
+    --radius: 14px;
+    --radius-sm: 8px;
+    --glow: 0 0 0 1px var(--accent), 0 0 22px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background:
+        radial-gradient(1200px 600px at 50% -10%, rgba(34, 232, 255, 0.08), transparent 60%),
+        radial-gradient(900px 500px at 100% 110%, rgba(255, 43, 214, 0.07), transparent 60%),
+        var(--bg);
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Scanlines CRT muito subtis por cima de tudo */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.028) 0,
+        rgba(255, 255, 255, 0.028) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+a {
+    color: var(--cyan);
+}
+
+:focus-visible {
+    outline: 2px solid var(--cyan);
+    outline-offset: 3px;
+}
+
+/* Títulos que recebem foco por código (mudança de ecrã) não precisam de contorno. */
+[tabindex="-1"]:focus {
+    outline: none;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* ---------- Tipografia ---------- */
+
+/* Fonte pixel — só em títulos */
+h1,
+h2,
+h3,
+.pixel {
+    font-family: var(--font-pixel);
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+/* Título neon na cor de acento da página */
+.title-arcade {
+    color: var(--accent);
+    text-shadow: 0 0 12px color-mix(in srgb, var(--accent) 55%, transparent);
+    text-transform: uppercase;
+}
+
+.neon-cyan {
+    color: var(--cyan);
+    text-shadow: 0 0 12px rgba(34, 232, 255, 0.55);
+}
+
+.neon-magenta {
+    color: var(--magenta);
+    text-shadow: 0 0 12px rgba(255, 43, 214, 0.55);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+/* Rótulo pequeno em pixel, em magenta */
+.eyebrow {
+    display: block;
+    margin: 0 0 12px;
+    font-family: var(--font-pixel);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--magenta);
+}
+
+kbd {
+    display: inline-block;
+    min-width: 1.8em;
+    padding: 1px 6px;
+    border: 1px solid var(--line);
+    border-bottom-width: 2px;
+    border-radius: 4px;
+    background: var(--panel);
+    color: var(--text);
+    font: 600 0.8rem/1.3 var(--font-sans);
+    text-align: center;
+}
+
+/* ---------- Botões ---------- */
+
+.btn {
+    --btn-color: var(--cyan);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    min-height: 44px;
+    padding: 0.65em 1.3em;
+    border: 1px solid var(--btn-color);
+    border-radius: var(--radius-sm);
+    background: color-mix(in srgb, var(--btn-color) 12%, transparent);
+    color: var(--btn-color);
+    font: 700 0.95rem/1 var(--font-sans);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s, box-shadow 0.15s, transform 0.1s;
+}
+
+.btn:hover {
+    background: color-mix(in srgb, var(--btn-color) 22%, transparent);
+    box-shadow: 0 0 18px color-mix(in srgb, var(--btn-color) 40%, transparent);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.btn--primary {
+    --btn-color: var(--accent);
+    background: var(--btn-color);
+    color: var(--bg);
+}
+
+.btn--primary:hover {
+    background: color-mix(in srgb, var(--btn-color) 85%, white);
+}
+
+.btn--red,
+.btn--magenta {
+    --btn-color: var(--magenta);
+}
+
+.btn--ghost {
+    --btn-color: var(--muted);
+    background: transparent;
+}
+
+/* ---------- Barra superior das apps ---------- */
+
+.topbar {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px max(16px, env(safe-area-inset-left, 0px));
+    background: rgba(7, 8, 15, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+}
+
+.topbar__back {
+    color: var(--muted);
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.topbar__back:hover {
+    color: var(--cyan);
+}
+
+.topbar__title {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    flex: 1;
+    min-width: 0;
+}
+
+.topbar__hud {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/* Botão de som (criado por shared/som.js) */
+.topbar__som {
+    display: grid;
+    place-items: center;
+    flex: none;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+
+.topbar__som:hover,
+.topbar__som:focus-visible {
+    color: var(--cyan);
+    border-color: var(--cyan);
+    box-shadow: 0 0 12px color-mix(in srgb, var(--cyan) 40%, transparent);
+    outline: none;
+}
+
+.topbar__som[aria-pressed="false"] {
+    color: var(--magenta);
+}
+
+/* Em ecrãs estreitos os indicadores passam para uma segunda linha. */
+@media (max-width: 640px) {
+    .topbar {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
+    .topbar__hud {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+/* Indicadores (pontos, ronda, combo...) */
+.chip {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    padding: 5px 11px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--panel);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.chip strong {
+    color: var(--text);
+    font-size: 0.95rem;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Chip em destaque (ex.: combo ativo) */
+.chip.is-active {
+    border-color: var(--magenta);
+    color: var(--magenta);
+    box-shadow: 0 0 12px rgba(255, 43, 214, 0.35);
+}
+
+.chip.is-active strong {
+    color: var(--magenta);
+}
+
+/* ---------- Ecrãs de jogo (intro / jogo / resultado) ---------- */
+
+.app-main {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+}
+
+.screen-card {
+    max-width: 660px;
+    margin: 5vh auto 0;
+    padding: clamp(24px, 5vw, 40px);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, var(--panel-2), var(--panel));
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    text-align: center;
+}
+
+.screen-card--wide {
+    max-width: 780px;
+}
+
+.screen-card h1,
+.screen-card h2 {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    margin-bottom: 16px;
+}
+
+.screen-card p {
+    color: var(--muted);
+    margin: 0 0 16px;
+}
+
+.screen-card .eyebrow {
+    color: var(--magenta);
+    margin-bottom: 12px;
+}
+
+.how-to {
+    text-align: left;
+    margin: 20px 0 28px;
+    padding: 16px 20px 16px 38px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: rgba(0, 0, 0, 0.25);
+    color: var(--text);
+}
+
+.how-to li + li {
+    margin-top: 6px;
+}
+
+.how-to li::marker {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.how-to strong {
+    color: var(--accent);
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ---------- Regras passo a passo (shared/regras.js) ---------- */
+
+.rules {
+    margin: 22px 0 24px;
+    text-align: left;
+}
+
+.rules__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.rules__count {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.rules__skip {
+    border: 0;
+    background: none;
+    color: var(--muted);
+    font: 600 0.8rem/1 var(--font-sans);
+    cursor: pointer;
+    padding: 4px 0;
+}
+
+.rules__skip:hover {
+    color: var(--accent);
+}
+
+/* barra de progresso em segmentos clicáveis */
+.rules__bar {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.rules__seg {
+    flex: 1;
+    height: 6px;
+    padding: 0;
+    border: 0;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background 0.25s, box-shadow 0.25s;
+}
+
+.rules__seg.is-done {
+    background: color-mix(in srgb, var(--accent) 55%, transparent);
+}
+
+.rules__seg.is-current {
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+}
+
+.rule {
+    min-height: 116px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding: 18px 20px;
+    border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    border-radius: var(--radius-sm);
+    background:
+        linear-gradient(120deg, color-mix(in srgb, var(--accent) 10%, transparent), transparent 60%),
+        rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 24px color-mix(in srgb, var(--accent) 8%, transparent);
+}
+
+.rule.is-forward {
+    animation: regra-entra-dir 0.35s ease-out;
+}
+
+.rule.is-back {
+    animation: regra-entra-esq 0.35s ease-out;
+}
+
+@keyframes regra-entra-dir {
+    from {
+        transform: translateX(24px);
+        opacity: 0.3;
+    }
+}
+
+@keyframes regra-entra-esq {
+    from {
+        transform: translateX(-24px);
+        opacity: 0.3;
+    }
+}
+
+.rule__side {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 64px;
+}
+
+.rule-icon {
+    width: 56px;
+    height: 56px;
+    color: var(--accent);
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--accent) 70%, transparent));
+}
+
+.rule-icon .alt {
+    color: var(--magenta);
+}
+
+.rule__n {
+    font-size: 0.6rem;
+    color: var(--muted);
+}
+
+.rule__text {
+    margin: 0 !important;
+    color: var(--text) !important;
+    font-size: 1.08rem;
+    line-height: 1.5;
+}
+
+.rule__text strong {
+    color: var(--accent);
+}
+
+.rules__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.rules__nav .rules__next {
+    margin-left: auto;
+}
+
+.rules__prev {
+    min-width: 46px;
+}
+
+/* o botão de começar surge na última regra, a pulsar */
+.actions.is-ready .btn--primary {
+    animation: pronto 1.6s ease-in-out infinite;
+}
+
+@keyframes pronto {
+    50% {
+        box-shadow: 0 0 26px color-mix(in srgb, var(--accent) 70%, transparent);
+    }
+}
+
+.big-score {
+    display: block;
+    margin: 8px 0 20px;
+    font-family: var(--font-pixel);
+    font-size: clamp(1.8rem, 8vw, 3rem);
+    color: var(--cyan);
+    text-shadow: 0 0 18px rgba(34, 232, 255, 0.6);
+    font-variant-numeric: tabular-nums;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
+    margin: 0 0 24px;
+}
+
+.stat {
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.stat span {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.stat strong {
+    font-size: 1.35rem;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Piscar estilo arcade */
+.blink {
+    animation: blink 1.1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}
+
+/* Erro de ligação ao servidor (Python), no ecrã de introdução */
+.erro-servidor {
+    margin: 14px 0 0;
+    padding: 10px 14px;
+    border: 1px solid rgba(255, 77, 109, 0.5);
+    border-radius: 10px;
+    background: rgba(255, 77, 109, 0.1);
+    color: var(--danger);
+    font-weight: 600;
+}
+
+.erro-servidor[hidden] {
+    display: none;
+}

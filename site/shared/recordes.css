@@ -1,0 +1,151 @@
+/* Recordes: página /recordes/ e caixa "guarda o teu recorde" nos ecrãs finais. */
+
+.recordes-pagina {
+    max-width: 1100px;
+}
+
+.recordes-grelha {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 18px 0 8px;
+    text-align: left;
+}
+
+.recordes-bloco {
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.recordes-bloco__titulo {
+    margin: 0 0 10px;
+    color: var(--amber);
+    font: 700 0.95rem var(--font-sans);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.recordes-lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.recordes-lista li {
+    display: grid;
+    grid-template-columns: 1.8em minmax(0, 1fr) auto;
+    grid-template-rows: auto auto;
+    column-gap: 8px;
+    align-items: baseline;
+    padding: 6px 4px;
+    border-bottom: 1px solid var(--line);
+}
+
+.recordes-lista li:first-child .recordes-lista__pos {
+    color: var(--amber);
+    text-shadow: 0 0 8px rgba(255, 197, 61, 0.6);
+}
+
+.recordes-lista li.is-meu {
+    border-radius: 6px;
+    background: rgba(255, 197, 61, 0.12);
+    box-shadow: inset 0 0 0 1px var(--amber);
+}
+
+.recordes-lista__pos {
+    grid-row: span 2;
+    color: var(--muted);
+    font: 0.85rem var(--font-pixel);
+}
+
+.recordes-lista__nome {
+    overflow: hidden;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.recordes-lista__pontos {
+    grid-row: span 2;
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+}
+
+.recordes-lista__detalhe {
+    grid-column: 2;
+    color: var(--muted);
+    font-size: 0.74rem;
+}
+
+.recordes-vazio {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.88rem;
+}
+
+/* caixa no ecrã final de cada jogo */
+.recorde-caixa {
+    max-width: 460px;
+    margin: 0 auto 20px;
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 197, 61, 0.4);
+    border-radius: var(--radius);
+    background: rgba(255, 197, 61, 0.05);
+    text-align: left;
+}
+
+.recorde-caixa[hidden] {
+    display: none;
+}
+
+.recorde-caixa__titulo {
+    margin: 0 0 8px;
+    color: var(--amber);
+    font: 700 0.8rem var(--font-sans);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.recorde-caixa form {
+    display: flex;
+    gap: 8px;
+}
+
+.recorde-caixa input {
+    flex: 1;
+    min-width: 0;
+    padding: 9px 12px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--text);
+    font: 600 1rem var(--font-sans);
+}
+
+.recorde-caixa input:focus {
+    border-color: var(--amber);
+    outline: none;
+}
+
+.recorde-caixa__msg {
+    min-height: 1.2em;
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.recorde-caixa__msg.is-erro {
+    color: var(--danger);
+}
+
+.recorde-caixa .recordes-lista {
+    margin-top: 6px;
+}
+
+@media (max-width: 900px) {
+    .recordes-grelha {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#07080f">
+    <title>Detetive de Países · Salão Arcade</title>
+    <link rel="preload" href="../shared/fonts/silkscreen-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../shared/fonts/chakra-petch-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../shared/base.css">
+    <link rel="stylesheet" href="../shared/recordes.css">
+    <link rel="stylesheet" href="geo.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="topbar__back" href="../">← Salão</a>
+        <span class="topbar__title pixel title-arcade">Detetive de Países</span>
+        <div class="topbar__hud" id="hud" hidden>
+            <span class="chip">Ronda <strong id="hud-round">1/5</strong></span>
+            <span class="chip">Pontos <strong id="hud-score">0</strong></span>
+            <span class="chip" id="hud-combo-chip">Combo <strong id="hud-combo">×1</strong></span>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <!-- ===== Intro ===== -->
+        <section data-screen="intro" class="screen-card">
+            <p class="eyebrow">Máquina Nº 01</p>
+            <h1 class="title-arcade">Detetive de Países</h1>
+            <p>Há um país-mistério escondido no mapa. Começas com uma pista difícil; cada vez que erras, recebes uma mais fácil.</p>
+            <ol class="how-to" data-passos>
+                <li>
+                    <svg class="rule-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                        <circle cx="24" cy="27" r="15"/><path d="M24 27V18M20 7h8M24 7v5M37 14l3-3"/>
+                        <path class="alt" d="M24 27l7 5"/>
+                    </svg>
+                    <strong>5 rondas</strong>, um país-mistério por ronda. Tens <strong>90 segundos</strong> para o encontrar.
+                </li>
+                <li>
+                    <svg class="rule-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M5 12l12-4 12 4 12-4v26l-12 4-12-4-12 4z"/><path d="M17 8v26M29 12v26"/>
+                        <path class="alt" d="M30 27l12 5-5 2 4 6-3 2-4-6-4 4z" fill="currentColor"/>
+                    </svg>
+                    Lê a pista e <strong>clica no país</strong> que achas que é. Se errares, aparece a <strong>pista seguinte</strong>, mais fácil.
+                </li>
+                <li>
+                    <svg class="rule-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                        <rect x="8" y="6" width="32" height="9" rx="2"/><rect x="8" y="19" width="32" height="9" rx="2" stroke-dasharray="4 3"/><rect x="8" y="32" width="32" height="9" rx="2" stroke-dasharray="4 3"/>
+                        <path class="alt" d="M13 10.5h14"/>
+                    </svg>
+                    Há <strong>6 pistas</strong>, da mais difícil para a mais fácil. Quanto <strong>menos usares</strong>, mais pontos. Se esgotares as pistas ou o tempo, perdes a ronda.
+                </li>
+                <li>
+                    <svg class="rule-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                        <path d="M10 14l10 20M20 14L10 34"/>
+                        <path class="alt" d="M27 15c3-3 11-3 11 4 0 4-4 5-8 6 5 1 9 3 9 7 0 6-9 6-12 3"/>
+                    </svg>
+                    Respostas certas seguidas aumentam o <strong>combo</strong>: ×1,5, ×2… até <strong>×3</strong>. Uma ronda falhada repõe ×1.
+                </li>
+                <li>
+                    <svg class="rule-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                        <circle cx="20" cy="20" r="12"/><path d="M29 29l11 11"/>
+                        <path class="alt" d="M20 14v12M14 20h12"/>
+                    </svg>
+                    Usa a <strong>roda do rato</strong> (ou dois dedos) para fazer zoom e <strong>arrasta</strong> para mover o mapa. Países pequenos ficam fáceis de acertar.
+                </li>
+            </ol>
+            <div class="actions">
+                <button class="btn btn--primary" type="button" data-action="start" data-autofocus>Começar partida ▸</button>
+            </div>
+            <p class="load-error" id="load-error" hidden></p>
+        </section>
+
+        <!-- ===== Jogo ===== -->
+        <section data-screen="game" hidden>
+            <div class="geo-layout">
+                <div class="map-frame">
+                    <div class="map-wrap">
+                        <svg id="map" class="map" viewBox="0 0 960 500" role="img" aria-label="Mapa-mundo: clica no país-mistério"></svg>
+                        <div class="map-toast" id="map-toast" role="status" aria-live="polite" hidden></div>
+                        <div class="map-zoom" aria-label="Zoom do mapa">
+                            <button type="button" id="zoom-in" aria-label="Aproximar">+</button>
+                            <button type="button" id="zoom-out" aria-label="Afastar">−</button>
+                            <button type="button" id="zoom-reset" aria-label="Ver o mundo inteiro">⟲</button>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="clues" aria-label="Pistas">
+                    <div class="clues__head">
+                        <h2 class="clues__title">Pistas</h2>
+                        <span class="clues__time pixel" id="time-left" aria-label="Segundos restantes">90</span>
+                    </div>
+                    <div class="timer" aria-hidden="true"><div class="timer__bar" id="timer-bar"></div></div>
+
+                    <p class="stakes pixel" id="stakes"></p>
+
+                    <ol class="clue-list" id="clue-list" aria-live="polite"></ol>
+
+                    <div class="round-end" id="round-end" hidden>
+                        <p class="round-end__verdict pixel" id="round-verdict"></p>
+                        <p class="round-end__country title-arcade pixel" id="round-country"></p>
+                        <p class="round-end__points" id="round-points"></p>
+                        <button class="btn btn--primary" type="button" id="next-round">Próxima ronda ▸</button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ===== Resultado ===== -->
+        <section data-screen="result" class="screen-card screen-card--wide" hidden>
+            <p class="eyebrow">Fim da partida</p>
+            <h1 class="title-arcade">Pontuação</h1>
+            <strong class="big-score" id="final-score">0</strong>
+            <div class="stat-grid" id="final-stats"></div>
+            <div class="table-wrap">
+                <table class="rounds-table">
+                    <thead>
+                        <tr><th>#</th><th>País</th><th>Resultado</th><th>Pistas</th><th>Tempo</th><th>Pontos</th></tr>
+                    </thead>
+                    <tbody id="rounds-body"></tbody>
+                </table>
+            </div>
+            <div id="final-recorde" hidden></div>
+            <div class="actions">
+                <button class="btn btn--primary" type="button" data-action="again" data-autofocus>Jogar de novo</button>
+                <a class="btn btn--ghost" href="../">Sair</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="vendor/d3.v7.9.0.min.js"></script>
+    <script src="vendor/topojson-client.3.1.0.min.js"></script>
+    <script type="module" src="geo.js"></script>
+</body>
+</html>

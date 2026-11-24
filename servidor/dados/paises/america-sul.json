@@ -1,0 +1,102 @@
+{
+    "continente": "América do Sul",
+    "descricao": "id = código ISO 3166-1 numérico (igual ao do mapa). 6 pistas por país, da mais difícil/de nicho para a mais fácil.",
+    "paises": [
+        { "id": "076", "nome": "Brasil", "continente": "América do Sul", "pistas": [
+            "A sua capital foi construída de raiz e inaugurada em 1960.",
+            "A bossa nova nasceu aqui, com Tom Jobim e Garota de Ipanema.",
+            "É a única seleção pentacampeã do mundo de futebol.",
+            "Pelé, o «Rei do futebol», nasceu aqui.",
+            "O Carnaval do Rio e as escolas de samba.",
+            "O Cristo Redentor, no alto do Corcovado."
+        ] },
+        { "id": "032", "nome": "Argentina", "continente": "América do Sul", "pistas": [
+            "A polícia daqui foi a primeira a usar impressões digitais numa investigação, em 1892.",
+            "O Papa Francisco nasceu aqui.",
+            "O assado e o doce de leite são paixões nacionais.",
+            "O tango nasceu nos bairros portuários da sua capital.",
+            "Maradona e Messi levaram a sua seleção a títulos mundiais.",
+            "A capital é Buenos Aires."
+        ] },
+        { "id": "858", "nome": "Uruguai", "continente": "América do Sul", "pistas": [
+            "Bebe-se mate por todo o lado, até a caminhar na rua.",
+            "José Mujica, presidente entre 2010 e 2015, ficou conhecido por viver de forma modesta.",
+            "Foi o primeiro país a legalizar a produção e venda de canábis, em 2013.",
+            "Organizou e venceu o primeiro Mundial de futebol, em 1930.",
+            "Os futebolistas Luis Suárez e Edinson Cavani nasceram aqui.",
+            "A capital é Montevideu."
+        ] },
+        { "id": "600", "nome": "Paraguai", "continente": "América do Sul", "pistas": [
+            "O nhandutí é uma renda delicada que imita uma teia de aranha.",
+            "A Guerra da Tríplice Aliança (1864–1870) devastou a sua população.",
+            "O tereré, mate frio, é a bebida nacional.",
+            "A barragem de Itaipu, partilhada com o Brasil, é das maiores hidroelétricas do mundo.",
+            "O guarani é língua oficial e é falado pela maioria da população.",
+            "A capital é Assunção."
+        ] },
+        { "id": "068", "nome": "Bolívia", "continente": "América do Sul", "pistas": [
+            "As «cholitas» lutam wrestling com saias tradicionais e chapéus de coco.",
+            "Tem algumas das maiores reservas de lítio do mundo.",
+            "Che Guevara foi capturado e morto aqui, em 1967.",
+            "O lago Titicaca, partilhado com o Peru, é o lago navegável mais alto do mundo.",
+            "O Salar de Uyuni é o maior deserto de sal do mundo.",
+            "Tem duas capitais: Sucre e La Paz."
+        ] },
+        { "id": "604", "nome": "Peru", "continente": "América do Sul", "pistas": [
+            "A batata foi domesticada aqui, há milhares de anos.",
+            "O urso Paddington veio daqui para Londres.",
+            "As linhas de Nazca são desenhos gigantes traçados no deserto.",
+            "O ceviche, peixe cru marinado em lima, é o prato nacional.",
+            "Machu Picchu, a cidade perdida dos incas.",
+            "A capital é Lima."
+        ] },
+        { "id": "218", "nome": "Equador", "continente": "América do Sul", "pistas": [
+            "Foi o primeiro país a reconhecer direitos à natureza na Constituição, em 2008.",
+            "O chamado «chapéu-panamá» é, na verdade, feito aqui.",
+            "É o maior exportador de bananas do mundo.",
+            "As ilhas Galápagos, que inspiraram Darwin, pertencem-lhe.",
+            "O nome do país refere-se à linha imaginária que o atravessa.",
+            "A capital é Quito."
+        ] },
+        { "id": "170", "nome": "Colômbia", "continente": "América do Sul", "pistas": [
+            "Produz a maior parte das esmeraldas do mundo.",
+            "Gabriel García Márquez, autor de Cem Anos de Solidão, nasceu aqui.",
+            "O seu café é famoso no mundo inteiro.",
+            "O filme Encanto, da Disney, passa-se aqui.",
+            "A cantora Shakira nasceu aqui, em Barranquilla.",
+            "A capital é Bogotá."
+        ] },
+        { "id": "862", "nome": "Venezuela", "continente": "América do Sul", "pistas": [
+            "É um dos países com mais títulos de Miss Universo.",
+            "As arepas, broas de milho recheadas, são o pão do dia a dia.",
+            "Simón Bolívar, «o Libertador», nasceu aqui.",
+            "Tem as maiores reservas de petróleo provadas do mundo.",
+            "O Salto Ángel é a queda de água mais alta do mundo.",
+            "A capital é Caracas."
+        ] },
+        { "id": "328", "nome": "Guiana", "continente": "América do Sul", "pistas": [
+            "A queda de água de Kaieteur é uma das mais potentes do mundo.",
+            "O massacre de Jonestown, de uma seita americana, aconteceu aqui em 1978.",
+            "O críquete é o desporto mais popular.",
+            "Descobertas recentes de petróleo fizeram a economia crescer a um ritmo recorde.",
+            "É o único país da América do Sul com o inglês como língua oficial.",
+            "A capital é Georgetown."
+        ] },
+        { "id": "740", "nome": "Suriname", "continente": "América do Sul", "pistas": [
+            "Mais de 90% do território é floresta, a maior percentagem do mundo.",
+            "Em 1667, os neerlandeses trocaram a atual Nova Iorque por este território.",
+            "Clarence Seedorf e outros craques dos Países Baixos nasceram aqui.",
+            "O neerlandês é a língua oficial.",
+            "É o país mais pequeno da América do Sul.",
+            "A capital é Paramaribo."
+        ] },
+        { "id": "152", "nome": "Chile", "continente": "América do Sul", "pistas": [
+            "É o maior produtor de cobre do mundo.",
+            "O observatório ALMA, no deserto, é um dos maiores radiotelescópios do mundo.",
+            "Os poetas Pablo Neruda e Gabriela Mistral, ambos Prémio Nobel, nasceram aqui.",
+            "O deserto do Atacama é um dos lugares mais secos do planeta.",
+            "A Ilha da Páscoa e as suas estátuas moai pertencem a este país.",
+            "A capital é Santiago."
+        ] }
+    ]
+}

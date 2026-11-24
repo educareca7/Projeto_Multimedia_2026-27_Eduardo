@@ -1,0 +1,350 @@
+{
+    "continente": "Ásia",
+    "descricao": "id = código ISO 3166-1 numérico (igual ao do mapa). 6 pistas por país, da mais difícil/de nicho para a mais fácil. Só cultura e conhecimento, nunca análise do mapa.",
+    "paises": [
+        { "id": "792", "nome": "Turquia", "continente": "Ásia", "pistas": [
+            "As túlipas foram levadas daqui para a Europa no século XVI.",
+            "Os dervixes rodopiantes da ordem Mevlevi dançam aqui há séculos.",
+            "O seu café servido com borra é Património Imaterial da Humanidade.",
+            "Kebab, baklava e delícias lokum.",
+            "Na Capadócia, balões sobrevoam as «chaminés de fada».",
+            "A Basílica de Santa Sofia e o Grande Bazar de Istambul."
+        ] },
+        { "id": "268", "nome": "Geórgia", "continente": "Ásia", "pistas": [
+            "Faz vinho há 8000 anos, em ânforas de barro enterradas chamadas qvevri.",
+            "Estaline nasceu aqui, na cidade de Gori.",
+            "O khachapuri, pão em forma de barco com queijo e ovo, é o prato típico.",
+            "Tem um alfabeto próprio, com letras arredondadas únicas.",
+            "Tem o mesmo nome em português que um estado dos EUA.",
+            "A capital é Tbilissi."
+        ] },
+        { "id": "051", "nome": "Arménia", "continente": "Ásia", "pistas": [
+            "Foi o primeiro país a adotar o cristianismo como religião oficial, em 301.",
+            "Os pais do cantor Charles Aznavour eram deste país.",
+            "O nome científico do damasco refere este país.",
+            "Kim Kardashian tem origem neste país.",
+            "O monte Ararat, símbolo nacional, vê-se da capital, mas fica na Turquia.",
+            "A capital é Erevan."
+        ] },
+        { "id": "031", "nome": "Azerbaijão", "continente": "Ásia", "pistas": [
+            "Tem quase metade dos vulcões de lama do mundo.",
+            "Yanar Dag, uma colina que arde há décadas, valeu-lhe o nome de «terra do fogo».",
+            "Organizou a Eurovisão em 2012.",
+            "A capital recebe um Grande Prémio de Fórmula 1 num circuito urbano.",
+            "Tem grandes reservas de petróleo no Mar Cáspio.",
+            "A capital é Baku."
+        ] },
+        { "id": "398", "nome": "Cazaquistão", "continente": "Ásia", "pistas": [
+            "As maçãs terão origem nas suas montanhas.",
+            "Foi a última república a sair da União Soviética, em dezembro de 1991.",
+            "O cosmódromo de Baikonur, de onde partiu Gagarin, fica aqui.",
+            "É o maior país do mundo sem acesso ao mar.",
+            "O filme Borat finge passar-se aqui.",
+            "A capital é Astana."
+        ] },
+        { "id": "860", "nome": "Usbequistão", "continente": "Ásia", "pistas": [
+            "O plov, arroz com carne e cenoura, é o prato nacional.",
+            "Al-Khwarizmi, de cujo nome vem a palavra «algoritmo», nasceu nesta região.",
+            "O mar de Aral, que partilha com o vizinho, quase secou.",
+            "É um dos dois únicos países do mundo duplamente sem acesso ao mar.",
+            "A praça Registan, em Samarcanda, é uma joia da Rota da Seda.",
+            "A capital é Tashkent."
+        ] },
+        { "id": "795", "nome": "Turquemenistão", "continente": "Ásia", "pistas": [
+            "Os cavalos akhal-teke, de pelo brilhante, são símbolo nacional.",
+            "Um antigo presidente deu aos meses os nomes de membros da sua família.",
+            "A capital tem o recorde da maior densidade de edifícios de mármore branco.",
+            "Tem algumas das maiores reservas de gás natural do mundo.",
+            "A «Porta do Inferno», uma cratera de gás, arde desde 1971.",
+            "A capital é Ashgabat."
+        ] },
+        { "id": "417", "nome": "Quirguistão", "continente": "Ásia", "pistas": [
+            "O poema épico Manas é um dos mais longos do mundo.",
+            "O chapéu de feltro branco, ak-kalpak, é símbolo nacional.",
+            "Organizou várias edições dos Jogos Mundiais Nómadas.",
+            "O lago Issyk-Kul é um dos maiores lagos de montanha do mundo.",
+            "A bandeira mostra um sol com o topo de uma iurta.",
+            "A capital é Bishkek."
+        ] },
+        { "id": "762", "nome": "Tajiquistão", "continente": "Ásia", "pistas": [
+            "O poeta Rudaki, pai da poesia persa, é herói nacional.",
+            "A sua língua é muito próxima do persa.",
+            "A Estrada do Pamir é uma das estradas mais altas do mundo.",
+            "Mais de 90% do território é montanhoso.",
+            "Fez parte da União Soviética até 1991.",
+            "A capital é Dushanbe."
+        ] },
+        { "id": "004", "nome": "Afeganistão", "continente": "Ásia", "pistas": [
+            "O lápis-lazúli é extraído aqui há mais de 6000 anos.",
+            "O buzkashi é um jogo a cavalo disputado com uma carcaça de cabra.",
+            "Os Budas gigantes de Bamiyan foram destruídos em 2001.",
+            "Foi invadido pela União Soviética em 1979.",
+            "O romance O Menino de Cabul passa-se aqui.",
+            "A capital é Cabul."
+        ] },
+        { "id": "586", "nome": "Paquistão", "continente": "Ásia", "pistas": [
+            "Grande parte das bolas de futebol do mundo é cosida em Sialkot.",
+            "A cidade antiga de Mohenjo-daro, do vale do Indo, fica aqui.",
+            "O K2, segunda montanha mais alta do mundo, ergue-se no seu território.",
+            "Malala Yousafzai, a mais jovem Nobel da Paz, nasceu aqui.",
+            "No críquete, Imran Khan foi capitão campeão do mundo e depois primeiro-ministro.",
+            "A capital é Islamabad."
+        ] },
+        { "id": "356", "nome": "Índia", "continente": "Ásia", "pistas": [
+            "O xadrez descende de um jogo daqui chamado chaturanga.",
+            "O zero como algarismo foi desenvolvido por matemáticos daqui.",
+            "Vasco da Gama chegou aqui, a Calecute, em 1498.",
+            "Gandhi liderou aqui uma luta não violenta pela independência.",
+            "Bollywood produz mais filmes por ano do que Hollywood.",
+            "O Taj Mahal; a capital é Nova Deli."
+        ] },
+        { "id": "524", "nome": "Nepal", "continente": "Ásia", "pistas": [
+            "Os momos, pastéis cozidos ao vapor, são o petisco mais popular.",
+            "Uma menina, a Kumari, é venerada como deusa viva na capital.",
+            "Buda nasceu aqui, em Lumbini.",
+            "Os soldados gurkhas, famosos pela coragem, vêm daqui.",
+            "É o único país com uma bandeira que não é retangular.",
+            "Os sherpas guiam as expedições ao Evereste; a capital é Katmandu."
+        ] },
+        { "id": "064", "nome": "Butão", "continente": "Ásia", "pistas": [
+            "O tiro com arco é o desporto nacional.",
+            "É o primeiro país do mundo com balanço de carbono negativo.",
+            "O mosteiro Ninho do Tigre está pendurado numa falésia.",
+            "Mede o progresso pela «Felicidade Interna Bruta».",
+            "A bandeira tem um dragão branco.",
+            "A capital é Thimphu."
+        ] },
+        { "id": "050", "nome": "Bangladesh", "continente": "Ásia", "pistas": [
+            "O Dia Internacional da Língua Materna (21 de fevereiro) nasceu de um movimento daqui.",
+            "Muhammad Yunus ganhou o Nobel da Paz pelo microcrédito.",
+            "Os Sundarbans, o maior mangal do mundo, são casa do tigre-de-bengala.",
+            "É um dos maiores exportadores de roupa do mundo.",
+            "Tornou-se independente do Paquistão em 1971.",
+            "A capital é Daca."
+        ] },
+        { "id": "144", "nome": "Sri Lanka", "continente": "Ásia", "pistas": [
+            "Teve a primeira mulher primeira-ministra do mundo, em 1960.",
+            "Muttiah Muralitharan é o lançador com mais vítimas da história do críquete de testes.",
+            "A Rocha do Leão, Sigiriya, tem uma fortaleza antiga no topo.",
+            "É famoso pelo seu chá preto.",
+            "Chamava-se Ceilão.",
+            "A maior cidade é Colombo."
+        ] },
+        { "id": "104", "nome": "Myanmar", "continente": "Ásia", "pistas": [
+            "Mulheres e crianças pintam o rosto com thanaka, uma pasta de casca de árvore.",
+            "Bagan tem mais de 2000 templos antigos numa planície.",
+            "Aung San Suu Kyi ganhou o Nobel da Paz em 1991.",
+            "O pagode Shwedagon está coberto de ouro.",
+            "Chamava-se Birmânia.",
+            "A capital é Naypyidaw; a maior cidade é Rangum."
+        ] },
+        { "id": "764", "nome": "Tailândia", "continente": "Ásia", "pistas": [
+            "O Red Bull nasceu de uma bebida energética daqui, a Krating Daeng.",
+            "É o único país do Sudeste Asiático que nunca foi colonizado por europeus.",
+            "O elefante é o animal nacional, e os tuk-tuks enchem as ruas.",
+            "O muay thai, a «arte das oito armas», nasceu aqui.",
+            "O pad thai é o seu prato de massa mais famoso.",
+            "A capital é Banguecoque."
+        ] },
+        { "id": "418", "nome": "Laos", "continente": "Ásia", "pistas": [
+            "A Planície dos Jarros tem milhares de jarros de pedra antigos.",
+            "O arroz glutinoso é comido à mão em quase todas as refeições.",
+            "É o país mais bombardeado da história por habitante.",
+            "Em Luang Prabang, os monges recolhem esmolas em procissão ao amanhecer.",
+            "É o único país do Sudeste Asiático sem acesso ao mar.",
+            "A capital é Vientiane."
+        ] },
+        { "id": "116", "nome": "Camboja", "continente": "Ásia", "pistas": [
+            "O amok, caril de peixe cozido em folha de bananeira, é o prato nacional.",
+            "O regime dos Khmers Vermelhos governou de 1975 a 1979.",
+            "O filme Tomb Raider foi filmado no templo de Ta Prohm.",
+            "A bandeira mostra um templo.",
+            "Angkor Wat é o maior monumento religioso do mundo.",
+            "A capital é Phnom Penh."
+        ] },
+        { "id": "704", "nome": "Vietname", "continente": "Ásia", "pistas": [
+            "O nón lá é um chapéu cónico de folha de palmeira, típico deste país.",
+            "É o segundo maior exportador de café do mundo.",
+            "O pho é uma sopa de massa de arroz servida ao pequeno-almoço.",
+            "A baía de Ha Long tem quase duas mil ilhas de calcário.",
+            "A guerra que o dividiu terminou em 1975, com a queda de Saigão.",
+            "A capital é Hanói."
+        ] },
+        { "id": "458", "nome": "Malásia", "continente": "Ásia", "pistas": [
+            "O durião, fruto de cheiro fortíssimo, é muito apreciado.",
+            "Malaca foi conquistada pelos portugueses em 1511.",
+            "Há orangotangos na sua parte da ilha de Bornéu.",
+            "O circuito de Sepang recebeu a Fórmula 1 até 2017.",
+            "As Torres Petronas foram as mais altas do mundo entre 1998 e 2004.",
+            "A capital é Kuala Lumpur."
+        ] },
+        { "id": "096", "nome": "Brunei", "continente": "Ásia", "pistas": [
+            "Os cidadãos não pagam imposto sobre o rendimento.",
+            "O palácio Istana Nurul Iman é um dos maiores palácios residenciais do mundo.",
+            "O sultão tem uma enorme coleção de carros de luxo.",
+            "A riqueza vem do petróleo e do gás.",
+            "É um pequeno sultanato na ilha de Bornéu.",
+            "A capital é Bandar Seri Begawan."
+        ] },
+        { "id": "360", "nome": "Indonésia", "continente": "Ásia", "pistas": [
+            "O batik, tecido pintado com cera, é Património Imaterial da Humanidade.",
+            "Borobudur é o maior templo budista do mundo.",
+            "É o país com a maior população muçulmana do mundo.",
+            "Os dragões-de-komodo só vivem aqui.",
+            "Tem mais de 17 000 ilhas, entre elas Java e Bornéu (em parte).",
+            "As praias de Bali; a capital é Jacarta."
+        ] },
+        { "id": "608", "nome": "Filipinas", "continente": "Ásia", "pistas": [
+            "O adobo, carne marinada em vinagre e soja, é o prato nacional.",
+            "O jeepney, jipe militar transformado em autocarro colorido, é um ícone nacional.",
+            "Manny Pacquiao foi campeão mundial de boxe em oito categorias de peso.",
+            "Fernão de Magalhães morreu aqui, em 1521.",
+            "O nome do país homenageia o rei Filipe II de Espanha.",
+            "A capital é Manila."
+        ] },
+        { "id": "626", "nome": "Timor-Leste", "continente": "Ásia", "pistas": [
+            "O tais é um tecido tradicional feito à mão pelas mulheres.",
+            "José Ramos-Horta e D. Ximenes Belo ganharam o Nobel da Paz em 1996.",
+            "Esteve ocupado pela Indonésia de 1975 a 1999.",
+            "O português e o tétum são as línguas oficiais.",
+            "Foi o primeiro novo país do século XXI, em 2002.",
+            "A capital é Díli."
+        ] },
+        { "id": "156", "nome": "China", "continente": "Ásia", "pistas": [
+            "O papel, a pólvora e a bússola foram inventados aqui.",
+            "Um exército de terracota guarda o túmulo do primeiro imperador.",
+            "O Ano Novo Lunar celebra-se com dragões e lanternas vermelhas.",
+            "Macau foi administrado por Portugal até 1999 e hoje pertence a este país.",
+            "O panda-gigante só vive aqui na natureza.",
+            "A Grande Muralha; a capital é Pequim."
+        ] },
+        { "id": "496", "nome": "Mongólia", "continente": "Ásia", "pistas": [
+            "O canto difónico khoomei permite cantar duas notas ao mesmo tempo.",
+            "No festival Naadam competem lutadores, arqueiros e cavaleiros.",
+            "Muitas famílias vivem em ger, tendas redondas desmontáveis.",
+            "O deserto de Gobi é famoso pelos fósseis de dinossauros.",
+            "Gengis Khan fundou aqui o maior império contíguo da história.",
+            "A capital é Ulan Bator."
+        ] },
+        { "id": "408", "nome": "Coreia do Norte", "continente": "Ásia", "pistas": [
+            "O Estádio Primeiro de Maio é um dos maiores estádios do mundo.",
+            "Os «Jogos de Massas» juntavam dezenas de milhares de ginastas em coreografias.",
+            "Usa um calendário próprio, contado a partir de 1912.",
+            "Uma zona desmilitarizada separa-o do vizinho do sul desde 1953.",
+            "É governado pela família Kim desde 1948.",
+            "A capital é Pyongyang."
+        ] },
+        { "id": "410", "nome": "Coreia do Sul", "continente": "Ásia", "pistas": [
+            "O seu alfabeto, o hangul, foi criado no século XV pelo rei Sejong.",
+            "O kimchi, couve fermentada e picante, acompanha quase todas as refeições.",
+            "Organizou os Jogos Olímpicos de 1988.",
+            "A Samsung e a Hyundai são empresas deste país.",
+            "A série Squid Game e o filme Parasitas são daqui.",
+            "K-pop: BTS, BLACKPINK e Gangnam Style; a capital é Seul."
+        ] },
+        { "id": "392", "nome": "Japão", "continente": "Ásia", "pistas": [
+            "O haiku é um poema curto de três versos, nascido aqui.",
+            "O karaoke foi inventado aqui.",
+            "Sushi, ramen e a cerimónia do chá.",
+            "Pokémon, Super Mario e os filmes do Studio Ghibli nasceram aqui.",
+            "O Monte Fuji e os comboios-bala shinkansen.",
+            "A capital é Tóquio."
+        ] },
+        { "id": "364", "nome": "Irão", "continente": "Ásia", "pistas": [
+            "O poeta Hafez, nascido em Shiraz, é recitado de cor por muitas famílias.",
+            "Produz cerca de 90% do açafrão do mundo.",
+            "A expressão «xeque-mate» vem da sua língua.",
+            "O Ano Novo, o Nowruz, celebra-se no equinócio da primavera.",
+            "As ruínas de Persépolis foram a capital de um grande império antigo.",
+            "Chamava-se Pérsia; a capital é Teerão."
+        ] },
+        { "id": "368", "nome": "Iraque", "continente": "Ásia", "pistas": [
+            "A escrita cuneiforme, uma das mais antigas, nasceu aqui, na Suméria.",
+            "A Epopeia de Gilgamesh foi escrita aqui.",
+            "O Código de Hamurabi vem da antiga Babilónia, que ficava aqui.",
+            "É a antiga Mesopotâmia, a terra entre os rios Tigre e Eufrates.",
+            "Saddam Hussein governou de 1979 a 2003.",
+            "A capital é Bagdade."
+        ] },
+        { "id": "760", "nome": "Síria", "continente": "Ásia", "pistas": [
+            "O Krak des Chevaliers é um dos castelos de cruzados mais bem conservados.",
+            "O sabão de Alepo, de azeite e louro, é famoso há séculos.",
+            "O pai biológico de Steve Jobs nasceu aqui.",
+            "A sua capital é uma das cidades habitadas há mais tempo no mundo.",
+            "As ruínas de Palmira ficam no seu deserto.",
+            "A capital é Damasco."
+        ] },
+        { "id": "422", "nome": "Líbano", "continente": "Ásia", "pistas": [
+            "Os templos romanos de Baalbek estão entre os maiores alguma vez construídos.",
+            "Os fenícios, que criaram um dos primeiros alfabetos, viviam aqui.",
+            "Khalil Gibran, autor de O Profeta, nasceu aqui.",
+            "O tabule e o homus são estrelas da sua cozinha.",
+            "Um cedro verde ocupa o centro da bandeira.",
+            "A capital é Beirute."
+        ] },
+        { "id": "376", "nome": "Israel", "continente": "Ásia", "pistas": [
+            "A rega gota-a-gota moderna foi desenvolvida aqui.",
+            "A aplicação de navegação Waze foi criada aqui.",
+            "O hebraico foi revivido aqui como língua do dia a dia.",
+            "Venceu a Eurovisão de 2018 com a cantora Netta.",
+            "O Mar Morto, o ponto mais baixo em terra do planeta, banha o país.",
+            "Telavive é o seu principal centro económico."
+        ] },
+        { "id": "400", "nome": "Jordânia", "continente": "Ásia", "pistas": [
+            "O mansaf, borrego com iogurte seco, é o prato nacional.",
+            "O deserto de Wadi Rum serviu de cenário a filmes como Perdido em Marte e Duna.",
+            "O nome vem do rio onde, segundo a tradição, Jesus foi batizado.",
+            "No Mar Morto, que banha o país, flutua-se sem esforço.",
+            "A cidade de Petra, esculpida na rocha, é uma das novas sete maravilhas.",
+            "A capital é Amã."
+        ] },
+        { "id": "682", "nome": "Arábia Saudita", "continente": "Ásia", "pistas": [
+            "O Rub' al-Khali é o maior deserto de areia contínuo do mundo.",
+            "Até 2018, as mulheres não podiam conduzir.",
+            "Planeia «The Line», uma cidade em linha reta no projeto NEOM.",
+            "Vai organizar o Mundial de futebol de 2034.",
+            "As cidades sagradas de Meca e Medina ficam aqui.",
+            "A capital é Riade."
+        ] },
+        { "id": "887", "nome": "Iémen", "continente": "Ásia", "pistas": [
+            "Segundo a tradição, a Rainha de Sabá governou aqui.",
+            "O porto de Moca deu nome ao café moca.",
+            "A cidade de Shibam tem «arranha-céus» de barro do século XVI.",
+            "A ilha de Socotorá tem árvores-sangue-de-dragão únicas no mundo.",
+            "Vive uma guerra civil desde 2014.",
+            "A capital é Sanaa."
+        ] },
+        { "id": "512", "nome": "Omã", "continente": "Ásia", "pistas": [
+            "O incenso é colhido aqui há milénios.",
+            "Segundo a lenda, Simbad, o marinheiro, partiu do porto de Sohar.",
+            "O sultão Qaboos governou de 1970 a 2020.",
+            "A Grande Mesquita tem um dos maiores tapetes feitos à mão do mundo.",
+            "Os portugueses ocuparam a capital entre 1507 e 1650.",
+            "A capital é Mascate."
+        ] },
+        { "id": "784", "nome": "Emirados Árabes Unidos", "continente": "Ásia", "pistas": [
+            "A falcoaria é tão apreciada que os falcões têm passaporte.",
+            "O Museu do Louvre tem aqui uma filial.",
+            "A Expo 2020 realizou-se aqui.",
+            "O Burj Khalifa é o edifício mais alto do mundo.",
+            "É uma federação de sete emirados.",
+            "Dubai e a capital, Abu Dhabi."
+        ] },
+        { "id": "634", "nome": "Catar", "continente": "Ásia", "pistas": [
+            "A estação de televisão Al Jazeera tem sede aqui.",
+            "O Museu de Arte Islâmica foi desenhado pelo arquiteto I. M. Pei.",
+            "Tem um dos PIB por habitante mais altos do mundo, graças ao gás natural.",
+            "Um fundo de investimento daqui comprou o Paris Saint-Germain.",
+            "Organizou o Mundial de futebol de 2022.",
+            "A capital é Doha."
+        ] },
+        { "id": "414", "nome": "Kuwait", "continente": "Ásia", "pistas": [
+            "Nas corridas de camelos, os jóqueis são robôs.",
+            "A sua moeda, o dinar, é a de maior valor do mundo.",
+            "Três torres com esferas azuis são o símbolo da capital.",
+            "Tem cerca de 6% das reservas mundiais de petróleo.",
+            "Foi invadido pelo Iraque em 1990, o que levou à Guerra do Golfo.",
+            "A capital tem o mesmo nome do país."
+        ] }
+    ]
+}

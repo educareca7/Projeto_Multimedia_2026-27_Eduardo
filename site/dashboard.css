@@ -1,0 +1,331 @@
+/* ===== Dashboard — Salão Arcade ===== */
+
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-block: max(20px, env(safe-area-inset-top, 0px)) 16px;
+    padding-inline: 16px;
+}
+
+/* ---------- Cabeçalho ---------- */
+
+.hero {
+    text-align: center;
+    margin: 4px 0 22px;
+}
+
+.hero__title {
+    font-size: clamp(1.4rem, 3.4vw, 2.3rem);
+    line-height: 1.2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 0.5em;
+}
+
+/* Descrição discreta */
+.hero__subtitle {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+}
+
+/* "INSERE UMA FICHA" a piscar, como nas máquinas de arcade */
+.hero__coin {
+    margin: 12px 0 0;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--cyan);
+    text-shadow: 0 0 10px rgba(34, 232, 255, 0.7);
+}
+
+/* ---------- Máquinas (cartões) ---------- */
+
+.cabinets {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.cabinet {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    border: 1px solid var(--line);
+    border-radius: var(--radius) var(--radius) 6px 6px;
+    background: linear-gradient(180deg, var(--panel-2) 0%, var(--panel) 55%, var(--bg-2) 100%);
+    color: inherit;
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.cabinet:hover,
+.cabinet:focus-visible {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: var(--glow), 0 24px 50px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+/* Letreiro no topo da máquina */
+.cabinet__marquee {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 16px;
+    background:
+        linear-gradient(90deg, color-mix(in srgb, var(--accent) 28%, transparent), transparent 85%),
+        var(--bg-2);
+    border-bottom: 2px solid var(--accent);
+}
+
+.cabinet__marquee--dual {
+    background:
+        linear-gradient(90deg, rgba(34, 232, 255, 0.25), rgba(255, 43, 214, 0.25)),
+        var(--bg-2);
+    border-image: linear-gradient(90deg, var(--cyan), var(--magenta)) 1;
+}
+
+.cabinet__num {
+    font-size: 0.6rem;
+    color: var(--bg);
+    background: var(--accent);
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+.cabinet__title {
+    font-size: clamp(0.62rem, 1.15vw, 0.8rem);
+    color: var(--text);
+    text-shadow: 0 0 8px color-mix(in srgb, var(--accent) 60%, transparent);
+}
+
+/* Ecrã (capa) com moldura e vinheta */
+.cabinet__screen {
+    position: relative;
+    margin: 14px 14px 0;
+    aspect-ratio: 16 / 10;
+    border-radius: 10px;
+    background: #05060c;
+    border: 5px solid #05060c;
+    box-shadow: inset 0 0 0 1px var(--line), 0 0 0 1px rgba(255, 255, 255, 0.04);
+    overflow: hidden;
+}
+
+/* vinheta + reflexo de vidro por cima da capa */
+.cabinet__screen::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: 6px;
+    background:
+        linear-gradient(160deg, rgba(255, 255, 255, 0.07), transparent 38%),
+        radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+.cover > svg,
+.cover > canvas {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: filter 0.2s;
+    filter: brightness(0.9);
+}
+
+.cabinet:hover .cover > svg,
+.cabinet:hover .cover > canvas,
+.cabinet:focus-visible .cover > svg,
+.cabinet:focus-visible .cover > canvas {
+    filter: brightness(1.15) saturate(1.15);
+}
+
+.cover--geo {
+    background: radial-gradient(ellipse at 50% 45%, #0d1a3a 0%, #05060c 75%);
+}
+
+/* Painel de controlo */
+.cabinet__panel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 16px 16px;
+}
+
+.cabinet__panel p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+.cabinet__foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cabinet__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.cabinet__meta li {
+    padding: 2px 9px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--text);
+}
+
+.cabinet__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-family: var(--font-pixel);
+    font-size: 0.55rem;
+    letter-spacing: 0.08em;
+    transition: background 0.2s, color 0.2s;
+}
+
+.cabinet:hover .cabinet__cta,
+.cabinet:focus-visible .cabinet__cta {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+/* ---------- Ilustrações das capas ---------- */
+
+/* comuns */
+.cv-chip rect { fill: rgba(7, 8, 15, 0.75); stroke: var(--cyan); stroke-width: 1; }
+.cv-chip text { font-family: var(--font-pixel); font-size: 6px; fill: var(--cyan); }
+.cv-chip--magenta rect { stroke: var(--magenta); }
+.cv-chip--magenta text { fill: var(--magenta); }
+
+/* 1 — globo */
+.cv-stars circle { fill: #cfe9ff; }
+.cv-hud-line path { fill: none; stroke: var(--cyan); stroke-width: 1.2; opacity: 0.7; }
+.cv-clue { font-family: var(--font-sans); font-size: 11px; font-weight: 600; fill: #e9ecff; letter-spacing: 0.02em; }
+
+/* 2 — luta */
+.cv-mtn-far path { fill: #1d0a33; stroke: #ff2bd6; stroke-opacity: 0.35; stroke-width: 0.8; }
+.cv-mtn-near path { fill: #12061f; stroke: #ff2bd6; stroke-opacity: 0.6; stroke-width: 1; }
+.cv-grid path, .cv-grid line { fill: none; stroke: #ff2bd6; stroke-width: 0.8; stroke-opacity: 0.6; }
+.cv-grid .cv-horizon { stroke: #ffb3ef; stroke-opacity: 0.9; stroke-width: 1.2; }
+.cv-bag { fill: #2a0b2e; stroke: var(--cyan); stroke-width: 1.6; }
+.cv-fighter-glow { fill: var(--magenta); stroke: var(--magenta); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
+.cv-fighter-body { fill: #14051c; stroke: #14051c; stroke-width: 6.5; stroke-linecap: round; stroke-linejoin: round; }
+.cv-hit path { fill: none; stroke: #ffe27a; stroke-width: 1.8; stroke-linecap: round; }
+.cv-hit-text { font-family: var(--font-pixel); font-size: 9px; fill: #ffe27a; }
+.cv-hud-label { font-family: var(--font-pixel); font-size: 7px; fill: var(--cyan); }
+.cv-bar-bg { fill: rgba(0, 0, 0, 0.5); stroke: var(--cyan); stroke-width: 0.8; }
+.cv-bar { fill: var(--cyan); }
+.cv-timer-bg { fill: rgba(0, 0, 0, 0.55); stroke: #ffe27a; stroke-width: 1; }
+.cv-timer { font-family: var(--font-pixel); font-size: 9px; fill: #ffe27a; }
+
+/* 3 — escape */
+.es-floor path { fill: none; stroke: #22e8ff; stroke-opacity: 0.12; stroke-width: 0.7; }
+.es-sign { font-family: var(--font-pixel); font-size: 15px; fill: #ff2bd6; letter-spacing: 2px; }
+.es-cab path:first-child { fill: #0a0918; stroke: #2a2950; stroke-width: 1; }
+.es-cab-marquee-c { fill: #22e8ff; opacity: 0.8; }
+.es-cab-marquee-m { fill: #ff2bd6; opacity: 0.8; }
+.es-cab-screen-c { fill: #0f4b63; stroke: #22e8ff; stroke-width: 0.8; }
+.es-cab-screen-m { fill: #561a55; stroke: #ff2bd6; stroke-width: 0.8; }
+.es-cab-panel { fill: #1a1838; }
+.es-exit { fill: #0a2a1c; stroke: #3dffa8; stroke-width: 1; }
+.es-exit-text { font-family: var(--font-pixel); font-size: 6px; fill: #3dffa8; }
+.es-door rect, .es-door circle { fill: #0d0c20; stroke: #22e8ff; stroke-width: 1.2; }
+.es-door circle { fill: #22e8ff; }
+.es-keypad rect { fill: #0d0c20; stroke: #8d93b8; stroke-width: 1; }
+.es-keypad path { stroke: #8d93b8; stroke-width: 1.4; }
+.es-digits text { font-family: var(--font-pixel); font-size: 22px; fill: #c59bff; }
+.es-led-bg { fill: #1a0508; stroke: #ff4d6d; stroke-width: 1; }
+.es-led { font-family: var(--font-pixel); font-size: 10px; fill: #ff4d6d; }
+
+/* ---------- Rodapé ---------- */
+
+.footer {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+.footer__recordes {
+    color: var(--amber);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px rgba(255, 197, 61, 0.5);
+}
+
+.footer__recordes:hover,
+.footer__recordes:focus-visible {
+    text-decoration: underline;
+}
+
+/* ---------- PC: tudo cabe no ecrã, sem barra de scroll ---------- */
+
+@media (min-width: 981px) and (min-height: 600px) {
+    html,
+    body {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .page {
+        max-width: 1360px;
+        height: 100vh;
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* cartões centrados na vertical entre o título e o rodapé */
+    .cabinets {
+        margin-block: auto;
+    }
+
+    /* a capa mantém 16:10, mas encolhe em altura se o ecrã for baixo */
+    .cabinet__screen {
+        max-height: max(130px, calc(100dvh - 425px));
+    }
+}
+
+/* ---------- Responsivo ---------- */
+
+@media (max-width: 980px) {
+    .cabinets {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cabinet__title {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .cabinets {
+        grid-template-columns: 1fr;
+    }
+}

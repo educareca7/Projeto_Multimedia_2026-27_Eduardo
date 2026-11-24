@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#07080f">
+    <title>Recordes · Salão Arcade</title>
+    <link rel="preload" href="../shared/fonts/silkscreen-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../shared/fonts/chakra-petch-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../shared/base.css">
+    <link rel="stylesheet" href="../shared/recordes.css">
+</head>
+<body style="--accent: var(--amber)">
+    <header class="topbar">
+        <a class="topbar__back" href="../">← Salão</a>
+        <span class="topbar__title pixel title-arcade">Recordes</span>
+    </header>
+
+    <main class="app-main">
+        <section class="screen-card screen-card--wide recordes-pagina">
+            <p class="eyebrow">Hall of fame</p>
+            <h1 class="title-arcade">Recordes</h1>
+            <p>Os 10 melhores de cada máquina. As pontuações são calculadas pelo servidor no fim de cada partida.</p>
+
+            <div class="recordes-grelha">
+                {% for tabela in tabelas %}
+                <section class="recordes-bloco" data-jogo="{{ tabela.id }}">
+                    <h2 class="recordes-bloco__titulo">{{ tabela.nome }}</h2>
+                    {% if tabela.linhas %}
+                    <ol class="recordes-lista">
+                        {% for linha in tabela.linhas %}
+                        <li>
+                            <span class="recordes-lista__pos">{{ linha.posicao }}</span>
+                            <span class="recordes-lista__nome">{{ linha.nome }}</span>
+                            <span class="recordes-lista__detalhe">{{ linha.detalhe }}</span>
+                            <strong class="recordes-lista__pontos">{{ "{:,}".format(linha.pontos).replace(",", " ") }}</strong>
+                        </li>
+                        {% endfor %}
+                    </ol>
+                    {% else %}
+                    <p class="recordes-vazio">Ainda ninguém jogou. Sê o primeiro!</p>
+                    {% endif %}
+                </section>
+                {% endfor %}
+            </div>
+
+            <div class="actions">
+                <a class="btn btn--primary" href="../">Voltar ao salão</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,318 @@
+{
+    "continente": "Europa",
+    "descricao": "id = código ISO 3166-1 numérico (igual ao do mapa). 6 pistas por país, da mais difícil/de nicho para a mais fácil. Só cultura e conhecimento, nunca análise do mapa.",
+    "paises": [
+        { "id": "620", "nome": "Portugal", "continente": "Europa", "pistas": [
+            "Foi um dos primeiros países do mundo a abolir a pena de morte para crimes civis, em 1867.",
+            "É o maior produtor mundial de cortiça.",
+            "Aqui nasceu o fado, canção de saudade que é Património Imaterial da Humanidade desde 2011.",
+            "Os seus navegadores chegaram à Índia por mar em 1498.",
+            "O pastel de nata nasceu junto ao Mosteiro dos Jerónimos, em Belém.",
+            "É o país natal de Cristiano Ronaldo."
+        ] },
+        { "id": "724", "nome": "Espanha", "continente": "Europa", "pistas": [
+            "A sua língua escreve um ponto de interrogação invertido no início das perguntas.",
+            "Dom Quixote, considerado o primeiro romance moderno, foi escrito aqui por Cervantes.",
+            "Todos os anos, em Buñol, milhares de pessoas atiram tomates umas às outras na Tomatina.",
+            "O flamenco, com cante, baile e guitarra, é Património Imaterial da Humanidade.",
+            "A basílica da Sagrada Família, de Gaudí, está em construção desde 1882.",
+            "Terra da paella e de Rafael Nadal; a capital é Madrid."
+        ] },
+        { "id": "250", "nome": "França", "continente": "Europa", "pistas": [
+            "O sistema métrico foi criado aqui, na década de 1790.",
+            "Louis Braille, que criou a escrita para cegos, nasceu aqui.",
+            "Produz centenas de variedades de queijo, como o camembert e o brie.",
+            "A volta em bicicleta mais famosa do mundo termina tradicionalmente nos Campos Elísios.",
+            "A sua revolução de 1789 começou com a tomada da Bastilha.",
+            "A Torre Eiffel e o Museu do Louvre."
+        ] },
+        { "id": "380", "nome": "Itália", "continente": "Europa", "pistas": [
+            "Os violinos Stradivarius foram fabricados aqui, em Cremona.",
+            "Galileu Galilei nasceu neste país.",
+            "A ópera nasceu aqui no final do século XVI; Verdi e Puccini são deste país.",
+            "A arte da pizza napolitana é Património Imaterial da Humanidade.",
+            "Leonardo da Vinci nasceu aqui, numa vila chamada Vinci.",
+            "O Coliseu de Roma e a Torre inclinada de Pisa."
+        ] },
+        { "id": "276", "nome": "Alemanha", "continente": "Europa", "pistas": [
+            "O primeiro automóvel a gasolina foi patenteado aqui por Karl Benz, em 1886.",
+            "Os irmãos Grimm recolheram aqui contos como Branca de Neve e Hansel e Gretel.",
+            "Gutenberg inventou aqui a imprensa de caracteres móveis, por volta de 1450.",
+            "Bach e Beethoven nasceram neste país.",
+            "A Oktoberfest de Munique é a maior festa da cerveja do mundo.",
+            "O muro que dividia a sua capital, Berlim, caiu em 1989."
+        ] },
+        { "id": "826", "nome": "Reino Unido", "continente": "Europa", "pistas": [
+            "A primeira linha de metro do mundo abriu aqui, em 1863.",
+            "Isaac Newton e Charles Darwin estão sepultados na mesma abadia da sua capital.",
+            "As regras do futebol moderno foram escritas aqui, também em 1863.",
+            "Shakespeare nasceu em Stratford-upon-Avon.",
+            "Os Beatles formaram-se em Liverpool.",
+            "O Big Ben e o Palácio de Buckingham, em Londres."
+        ] },
+        { "id": "372", "nome": "Irlanda", "continente": "Europa", "pistas": [
+            "O Halloween tem raízes no Samhain, uma antiga festa celta deste país.",
+            "A harpa é o símbolo nacional e aparece nas moedas de euro.",
+            "Bram Stoker, autor de Drácula, nasceu aqui.",
+            "James Joyce situou o romance Ulisses na capital deste país.",
+            "A cerveja preta Guinness é produzida aqui desde 1759.",
+            "No dia de São Patrício, 17 de março, tudo se veste de verde; a capital é Dublin."
+        ] },
+        { "id": "300", "nome": "Grécia", "continente": "Europa", "pistas": [
+            "O seu hino nacional tem 158 estrofes, um dos mais longos do mundo.",
+            "A sua língua deu ao mundo palavras como democracia, teatro e geografia.",
+            "Os Jogos Olímpicos da Antiguidade realizavam-se aqui, em Olímpia.",
+            "Berço da filosofia de Sócrates, Platão e Aristóteles.",
+            "Moussaka, queijo feta e casas brancas com cúpulas azuis em Santorini.",
+            "O Pártenon ergue-se na Acrópole da sua capital, Atenas."
+        ] },
+        { "id": "528", "nome": "Países Baixos", "continente": "Europa", "pistas": [
+            "O primeiro casamento entre pessoas do mesmo sexo do mundo foi celebrado aqui, em 2001.",
+            "Cerca de um quarto do território fica abaixo do nível do mar.",
+            "Rembrandt e Vermeer, autor de Rapariga com Brinco de Pérola, nasceram aqui.",
+            "Van Gogh nasceu aqui, embora tenha pintado muitas obras em França.",
+            "Queijos gouda e edam, tamancos de madeira e campos de túlipas.",
+            "Moinhos de vento, bicicletas por todo o lado e os canais de Amesterdão."
+        ] },
+        { "id": "756", "nome": "Suíça", "continente": "Europa", "pistas": [
+            "Tem quatro línguas nacionais: alemão, francês, italiano e romanche.",
+            "O CERN, onde nasceu a World Wide Web, tem aqui a sua sede.",
+            "Ficou neutral nas duas guerras mundiais e é a sede da Cruz Vermelha.",
+            "Famosa pelos relógios de precisão, pelos canivetes e pelo chocolate.",
+            "O tenista Roger Federer nasceu aqui.",
+            "Fondue de queijo, bancos e o pico do Matterhorn nos Alpes."
+        ] },
+        { "id": "040", "nome": "Áustria", "continente": "Europa", "pistas": [
+            "O croissant terá nascido do kipferl, um pão em forma de lua crescente daqui.",
+            "Sigmund Freud criou a psicanálise na capital deste país.",
+            "O Concerto de Ano Novo da sua Filarmónica é transmitido para todo o mundo.",
+            "A Sachertorte, bolo de chocolate com doce de alperce, foi criada aqui.",
+            "O filme Música no Coração passa-se aqui, perto de Salzburgo.",
+            "Mozart nasceu aqui; a capital é Viena."
+        ] },
+        { "id": "056", "nome": "Bélgica", "continente": "Europa", "pistas": [
+            "O saxofone foi inventado por Adolphe Sax, nascido aqui.",
+            "A banda desenhada é uma arte nacional: Tintim e os Estrunfes nasceram aqui.",
+            "Tem três línguas oficiais: neerlandês, francês e alemão.",
+            "Os seus habitantes garantem que as batatas fritas foram inventadas aqui.",
+            "Chocolates, waffles e cervejas de abadia.",
+            "A capital, Bruxelas, acolhe a sede da União Europeia."
+        ] },
+        { "id": "442", "nome": "Luxemburgo", "continente": "Europa", "pistas": [
+            "É o único grão-ducado do mundo.",
+            "Os transportes públicos são gratuitos em todo o país desde 2020.",
+            "Cerca de 15% da população tem nacionalidade portuguesa.",
+            "Tem um dos PIB por habitante mais altos do mundo.",
+            "Foi um dos seis fundadores da Comunidade Europeia e é dos membros mais pequenos da UE.",
+            "A capital tem o mesmo nome do país."
+        ] },
+        { "id": "208", "nome": "Dinamarca", "continente": "Europa", "pistas": [
+            "Niels Bohr, pai do modelo atómico moderno, nasceu aqui.",
+            "A sua bandeira é considerada a bandeira nacional mais antiga ainda em uso.",
+            "A palavra «hygge» descreve o seu gosto por momentos acolhedores.",
+            "Hans Christian Andersen escreveu aqui A Pequena Sereia.",
+            "As peças de construção LEGO foram inventadas aqui.",
+            "A estátua da Pequena Sereia fica no porto de Copenhaga."
+        ] },
+        { "id": "578", "nome": "Noruega", "continente": "Europa", "pistas": [
+            "Lidera o medalheiro de todos os tempos dos Jogos Olímpicos de Inverno.",
+            "O pintor de O Grito, Edvard Munch, nasceu aqui.",
+            "Roald Amundsen, o primeiro a chegar ao Polo Sul (1911), era deste país.",
+            "Guarda a riqueza do petróleo do Mar do Norte num dos maiores fundos soberanos do mundo.",
+            "Vikings, fiordes e auroras boreais.",
+            "O Prémio Nobel da Paz é entregue na sua capital, Oslo."
+        ] },
+        { "id": "752", "nome": "Suécia", "continente": "Europa", "pistas": [
+            "O cinto de segurança de três pontos foi inventado aqui por um engenheiro da Volvo.",
+            "No Midsommar dança-se à volta de um mastro enfeitado com flores.",
+            "Alfred Nobel, inventor da dinamite, nasceu aqui.",
+            "Os ABBA venceram a Eurovisão de 1974 com a canção Waterloo.",
+            "A IKEA foi fundada aqui em 1943.",
+            "Terra de Pippi das Meias Altas; a capital é Estocolmo."
+        ] },
+        { "id": "246", "nome": "Finlândia", "continente": "Europa", "pistas": [
+            "Linus Torvalds, criador do Linux, nasceu aqui.",
+            "Há cerca de 3 milhões de saunas para 5,5 milhões de habitantes.",
+            "O jogo Angry Birds foi criado aqui.",
+            "A Nokia nasceu aqui em 1865, como fábrica de pasta de papel.",
+            "Os Moomins foram criados pela escritora Tove Jansson, deste país.",
+            "A Aldeia do Pai Natal fica em Rovaniemi, na Lapónia; a capital é Helsínquia."
+        ] },
+        { "id": "352", "nome": "Islândia", "continente": "Europa", "pistas": [
+            "O seu parlamento, o Althing, foi fundado em 930 e é um dos mais antigos do mundo.",
+            "Não tem exército permanente.",
+            "A cantora Björk nasceu aqui.",
+            "No Euro 2016, os seus adeptos tornaram famoso o grito viking «huh!».",
+            "A palavra géiser vem do Geysir, uma nascente quente deste país.",
+            "Terra de gelo e fogo, com vulcões e a Lagoa Azul; a capital é Reiquiavique."
+        ] },
+        { "id": "616", "nome": "Polónia", "continente": "Europa", "pistas": [
+            "Nicolau Copérnico, que pôs o Sol no centro do sistema, nasceu aqui.",
+            "Os pierogi, pastéis cozidos recheados, são o prato nacional.",
+            "O compositor Frédéric Chopin nasceu aqui em 1810.",
+            "Marie Curie, duas vezes Prémio Nobel, nasceu aqui.",
+            "O Papa João Paulo II nasceu aqui.",
+            "O futebolista Robert Lewandowski nasceu aqui; a capital é Varsóvia."
+        ] },
+        { "id": "643", "nome": "Rússia", "continente": "Europa", "pistas": [
+            "A tabela periódica foi criada aqui por Dmitri Mendeleiev.",
+            "Tem 11 fusos horários.",
+            "Tchaikovsky, compositor de O Lago dos Cisnes, nasceu aqui.",
+            "Iuri Gagarin, o primeiro ser humano no espaço (1961), nasceu aqui.",
+            "As matrioskas são bonecas de madeira que se encaixam umas nas outras.",
+            "A Praça Vermelha e o Kremlin, em Moscovo."
+        ] },
+        { "id": "191", "nome": "Croácia", "continente": "Europa", "pistas": [
+            "Nikola Tesla nasceu aqui, na aldeia de Smiljan.",
+            "A gravata tem origem nos lenços dos seus soldados, no século XVII.",
+            "A raça de cão dálmata tem o nome de uma região deste país.",
+            "Luka Modrić, Bola de Ouro em 2018, nasceu aqui.",
+            "A seleção de futebol joga com uma camisola aos quadrados vermelhos e brancos.",
+            "Dubrovnik serviu de cenário a A Guerra dos Tronos; a capital é Zagreb."
+        ] },
+        { "id": "348", "nome": "Hungria", "continente": "Europa", "pistas": [
+            "László Bíró, que inventou a esferográfica, nasceu aqui.",
+            "A sua capital tem mais de cem nascentes termais.",
+            "Ferenc Puskás, lenda do Real Madrid, nasceu aqui.",
+            "O goulash e a paprika são símbolos da sua cozinha.",
+            "Ernő Rubik inventou aqui o cubo mágico, em 1974.",
+            "A capital, Budapeste, é atravessada pelo rio Danúbio."
+        ] },
+        { "id": "203", "nome": "Chéquia", "continente": "Europa", "pistas": [
+            "A palavra robô nasceu numa peça de teatro de Karel Čapek, em 1920.",
+            "As lentes de contacto moles foram inventadas aqui por Otto Wichterle.",
+            "Franz Kafka nasceu aqui.",
+            "A cerveja pilsner foi criada na cidade de Plzeň, em 1842.",
+            "Até 1993 formava um só país com a Eslováquia.",
+            "O relógio astronómico e a Ponte Carlos ficam na sua capital, Praga."
+        ] },
+        { "id": "703", "nome": "Eslováquia", "continente": "Europa", "pistas": [
+            "Os bryndzové halušky, pequenos nhoques de batata com queijo de ovelha, são o prato nacional.",
+            "Fabrica mais automóveis por habitante do que qualquer outro país do mundo.",
+            "Os montes Tatra são a sua cordilheira mais famosa.",
+            "Separou-se pacificamente do vizinho em 1993, no chamado «divórcio de veludo».",
+            "A bandeira tem uma cruz dupla branca sobre três montes azuis.",
+            "A capital é Bratislava."
+        ] },
+        { "id": "705", "nome": "Eslovénia", "continente": "Europa", "pistas": [
+            "Mais de metade do território está coberto de floresta.",
+            "Melania Trump nasceu aqui.",
+            "O lago de Bled, com uma ilha e uma igreja no meio, é o postal mais famoso.",
+            "Luka Dončić, estrela da NBA, nasceu aqui.",
+            "Foi, com a Croácia, a primeira república a separar-se da Jugoslávia, em 1991.",
+            "A capital é Liubliana."
+        ] },
+        { "id": "688", "nome": "Sérvia", "continente": "Europa", "pistas": [
+            "É um dos maiores produtores mundiais de framboesas.",
+            "A palavra «vampiro» entrou nas línguas europeias a partir de relatos daqui, no século XVIII.",
+            "O festival de trompetes de Guča junta centenas de milhares de pessoas.",
+            "Foi o núcleo da antiga Jugoslávia.",
+            "Novak Djokovic, recordista de títulos do Grand Slam, nasceu aqui.",
+            "A capital é Belgrado."
+        ] },
+        { "id": "070", "nome": "Bósnia e Herzegovina", "continente": "Europa", "pistas": [
+            "Os ćevapi, pequenas salsichas grelhadas, são o prato mais popular.",
+            "O realizador Emir Kusturica nasceu aqui.",
+            "A ponte velha de Mostar foi reconstruída depois de destruída na guerra dos anos 90.",
+            "A capital acolheu os Jogos Olímpicos de Inverno de 1984.",
+            "O assassinato do arquiduque Francisco Fernando, que desencadeou a I Guerra Mundial, aconteceu aqui.",
+            "A capital é Sarajevo."
+        ] },
+        { "id": "499", "nome": "Montenegro", "continente": "Europa", "pistas": [
+            "O filme Casino Royale passa-se aqui, embora tenha sido filmado na Chéquia.",
+            "Usa o euro, apesar de não pertencer à União Europeia.",
+            "Tornou-se independente em 2006, depois de um referendo.",
+            "A baía de Kotor é muitas vezes chamada o «fiorde mais a sul da Europa».",
+            "O nome do país significa «Montanha Negra».",
+            "A capital é Podgorica."
+        ] },
+        { "id": "008", "nome": "Albânia", "continente": "Europa", "pistas": [
+            "A sua língua forma um ramo isolado da família indo-europeia.",
+            "O herói nacional Skanderbeg resistiu aqui ao Império Otomano no século XV.",
+            "Durante o regime comunista construíram-se cerca de 170 000 bunkers.",
+            "Madre Teresa de Calcutá pertencia a este povo.",
+            "A bandeira tem uma águia negra de duas cabeças sobre fundo vermelho.",
+            "A capital é Tirana."
+        ] },
+        { "id": "807", "nome": "Macedónia do Norte", "continente": "Europa", "pistas": [
+            "O ajvar, pasta de pimento assado, é presença obrigatória à mesa.",
+            "O lago de Ohrid é um dos mais antigos da Europa.",
+            "A capital encheu-se de estátuas gigantes num polémico projeto chamado «2014».",
+            "Madre Teresa nasceu na sua capital.",
+            "Mudou de nome em 2019, após um acordo com a Grécia.",
+            "A capital é Skopje."
+        ] },
+        { "id": "100", "nome": "Bulgária", "continente": "Europa", "pistas": [
+            "Abanar a cabeça de um lado para o outro significa «sim», e acenar para cima e para baixo significa «não».",
+            "O alfabeto cirílico ganhou forma aqui, no século X.",
+            "Uma bactéria do iogurte tem o nome deste país.",
+            "O Vale das Rosas produz grande parte do óleo de rosa do mundo.",
+            "Hristo Stoichkov, Bola de Ouro em 1994, nasceu aqui.",
+            "A capital é Sófia."
+        ] },
+        { "id": "642", "nome": "Roménia", "continente": "Europa", "pistas": [
+            "Petrache Poenaru, que patenteou uma caneta de tinta permanente em 1827, era daqui.",
+            "Nadia Comăneci, primeira ginasta com um 10 perfeito nos Jogos Olímpicos (1976), nasceu aqui.",
+            "O Palácio do Parlamento, na capital, é um dos maiores edifícios administrativos do mundo.",
+            "Fala uma língua latina, aparentada com o português, apesar de ficar no leste da Europa.",
+            "Vlad, o Empalador, inspirou o Drácula, e o castelo de Bran fica aqui.",
+            "A Transilvânia e os montes Cárpatos; a capital é Bucareste."
+        ] },
+        { "id": "498", "nome": "Moldávia", "continente": "Europa", "pistas": [
+            "Fez parte da União Soviética até 1991.",
+            "A adega de Mileștii Mici tem cerca de 200 km de galerias e milhões de garrafas.",
+            "A canção «Dragostea din tei» (o famoso «numa numa») é de uma banda daqui, os O-Zone.",
+            "Uma faixa do território, a Transnístria, declarou-se independente mas não é reconhecida.",
+            "A sua língua oficial é praticamente igual ao romeno.",
+            "A capital é Chisinau."
+        ] },
+        { "id": "804", "nome": "Ucrânia", "continente": "Europa", "pistas": [
+            "O maior avião do mundo, o Antonov An-225, foi construído aqui.",
+            "O borscht, sopa de beterraba, foi inscrito pela UNESCO em nome deste país.",
+            "Andriy Shevchenko, Bola de Ouro em 2004, nasceu aqui.",
+            "O acidente nuclear de Chernobil, em 1986, aconteceu aqui.",
+            "A bandeira é azul e amarela, como o céu sobre campos de trigo.",
+            "A capital é Kiev."
+        ] },
+        { "id": "112", "nome": "Bielorrússia", "continente": "Europa", "pistas": [
+            "O pintor Marc Chagall nasceu aqui, em Vitebsk.",
+            "O bisonte-europeu é um símbolo nacional.",
+            "Os draniki, panquecas de batata, são o prato nacional.",
+            "A tenista Aryna Sabalenka, campeã do Grand Slam, nasceu aqui.",
+            "O nome do país significa «Rússia Branca».",
+            "A capital é Minsk."
+        ] },
+        { "id": "233", "nome": "Estónia", "continente": "Europa", "pistas": [
+            "O Skype foi desenvolvido aqui por programadores locais.",
+            "Foi o primeiro país a permitir votar pela internet em eleições legislativas, em 2007.",
+            "Qualquer pessoa no mundo pode pedir a sua «residência digital».",
+            "A «Revolução Cantada» ajudou-o a sair da União Soviética.",
+            "A sua língua é aparentada com o finlandês.",
+            "A capital medieval é Tallinn."
+        ] },
+        { "id": "428", "nome": "Letónia", "continente": "Europa", "pistas": [
+            "Segundo a tradição local, a primeira árvore de Natal decorada surgiu aqui, em 1510.",
+            "Jacob Davis, coinventor das calças de ganga com rebites, nasceu aqui.",
+            "O seu Festival da Canção e da Dança junta dezenas de milhares de cantores.",
+            "O basquetebolista Kristaps Porziņģis nasceu aqui.",
+            "Com a Lituânia, é um dos dois países que falam uma língua báltica.",
+            "A capital é Riga, famosa pelos edifícios Arte Nova."
+        ] },
+        { "id": "440", "nome": "Lituânia", "continente": "Europa", "pistas": [
+            "A sua língua é considerada das mais antigas e conservadoras da Europa.",
+            "Os cepelinai, grandes bolinhos de batata recheados, são o prato nacional.",
+            "Tem um «Monte das Cruzes» com mais de 100 000 cruzes.",
+            "O basquetebol é quase uma religião: a seleção ganhou bronze olímpico em 1992, 1996 e 2000.",
+            "Foi o primeiro estado a declarar a independência da União Soviética, em 1990.",
+            "A capital é Vilnius."
+        ] },
+        { "id": "196", "nome": "Chipre", "continente": "Europa", "pistas": [
+            "Segundo a mitologia, Afrodite nasceu das espumas do mar na sua costa.",
+            "O halloumi, queijo que se pode grelhar, é daqui.",
+            "Ainda tem duas bases militares britânicas no seu território.",
+            "A sua capital é a última capital dividida da Europa.",
+            "É uma ilha do Mediterrâneo oriental, membro da União Europeia desde 2004.",
+            "A capital é Nicósia."
+        ] }
+    ]
+}

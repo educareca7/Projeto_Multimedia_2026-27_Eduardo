@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#07080f">
+    <title>Salão Arcade</title>
+    <link rel="preload" href="shared/fonts/silkscreen-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="shared/fonts/chakra-petch-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="shared/base.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="page">
+        <header class="hero">
+            <h1 class="hero__title">
+                <span class="neon-cyan">SALÃO</span>
+                <span class="neon-magenta">ARCADE</span>
+            </h1>
+            <p class="hero__subtitle">3 máquinas. 1 ficha cada. Joga uma partida, vê o resultado e sai.</p>
+            <p class="hero__coin pixel blink" aria-hidden="true">INSERE UMA FICHA</p>
+        </header>
+
+        <main class="cabinets" aria-label="Jogos disponíveis">
+
+            <!-- ===== Máquina 1 — Detetive de Países ===== -->
+            <a class="cabinet" href="geo/" style="--accent: var(--cyan)" data-key="1">
+                <div class="cabinet__marquee">
+                    <span class="cabinet__num pixel">01</span>
+                    <h2 class="cabinet__title">DETETIVE DE PAÍSES</h2>
+                </div>
+                <div class="cabinet__screen cover cover--geo" aria-hidden="true">
+                    <!-- globo desenhado em canvas pelo dashboard.js (com dados reais do mapa) -->
+                    <canvas class="cover__globe"></canvas>
+                    <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" class="cover__overlay">
+                        <defs>
+                            <linearGradient id="geo-fade" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#07080f" stop-opacity="0"/>
+                                <stop offset="1" stop-color="#07080f" stop-opacity=".95"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- estrelas -->
+                        <g class="cv-stars">
+                            <circle cx="22" cy="30" r=".9"><animate attributeName="opacity" values="1;.2;1" dur="2.6s" repeatCount="indefinite"/></circle>
+                            <circle cx="48" cy="92" r=".7"/>
+                            <circle cx="30" cy="150" r=".8"><animate attributeName="opacity" values=".3;1;.3" dur="3.1s" repeatCount="indefinite"/></circle>
+                            <circle cx="80" cy="18" r=".6"/>
+                            <circle cx="270" cy="24" r=".9"><animate attributeName="opacity" values="1;.3;1" dur="2.2s" repeatCount="indefinite"/></circle>
+                            <circle cx="296" cy="80" r=".7"/>
+                            <circle cx="284" cy="140" r=".8"><animate attributeName="opacity" values=".2;1;.2" dur="2.9s" repeatCount="indefinite"/></circle>
+                            <circle cx="244" cy="12" r=".6"/>
+                            <circle cx="12" cy="104" r=".6"/>
+                            <circle cx="306" cy="172" r=".6"/>
+                        </g>
+                        <!-- cantos de mira -->
+                        <g class="cv-hud-line">
+                            <path d="M8 18V8H18M302 8H312V18M312 182V192H302M18 192H8V182"/>
+                        </g>
+                        <!-- etiqueta de pista -->
+                        <g class="cv-chip">
+                            <rect x="14" y="14" width="64" height="16" rx="3"/>
+                            <text x="46" y="25.5" text-anchor="middle">PISTA 1/6</text>
+                        </g>
+                        <g class="cv-chip cv-chip--magenta">
+                            <rect x="246" y="14" width="60" height="16" rx="3"/>
+                            <text x="276" y="25.5" text-anchor="middle">×1,5</text>
+                        </g>
+                        <!-- pista a ser escrita -->
+                        <rect x="0" y="150" width="320" height="50" fill="url(#geo-fade)"/>
+                        <clipPath id="geo-type">
+                            <rect x="20" y="166" width="0" height="20">
+                                <animate attributeName="width" values="0;280;280;0" keyTimes="0;.45;.9;1" dur="6s" repeatCount="indefinite"/>
+                            </rect>
+                        </clipPath>
+                        <text x="22" y="180" class="cv-clue" clip-path="url(#geo-type)">«Escreve um ¿ no início das perguntas…»</text>
+                    </svg>
+                </div>
+                <div class="cabinet__panel">
+                    <p>Descobre o país-mistério com pistas de cultura e história. Cada erro revela uma pista mais fácil.</p>
+                    <div class="cabinet__foot">
+                        <ul class="cabinet__meta">
+                            <li>5 rondas</li>
+                            <li>165 países</li>
+                        </ul>
+                        <span class="cabinet__cta">INSERIR FICHA <span aria-hidden="true">▶</span></span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ===== Máquina 2 — Artes Marciais ===== -->
+            <a class="cabinet" href="artes/" style="--accent: var(--magenta)" data-key="2">
+                <div class="cabinet__marquee">
+                    <span class="cabinet__num pixel">02</span>
+                    <h2 class="cabinet__title">ARTES MARCIAIS</h2>
+                </div>
+                <div class="cabinet__screen cover cover--fight" aria-hidden="true">
+                    <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <linearGradient id="ft-sky" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#0b0620"/>
+                                <stop offset=".55" stop-color="#3a0d4a"/>
+                                <stop offset="1" stop-color="#ff2bd6" stop-opacity=".55"/>
+                            </linearGradient>
+                            <linearGradient id="ft-sun" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#ffe27a"/>
+                                <stop offset=".6" stop-color="#ff7a59"/>
+                                <stop offset="1" stop-color="#ff2bd6"/>
+                            </linearGradient>
+                            <mask id="ft-sun-cut">
+                                <rect width="320" height="200" fill="white"/>
+                                <rect x="200" y="112" width="110" height="3" fill="black"/>
+                                <rect x="200" y="121" width="110" height="4" fill="black"/>
+                                <rect x="200" y="131" width="110" height="5" fill="black"/>
+                                <rect x="200" y="142" width="110" height="6" fill="black"/>
+                            </mask>
+                            <filter id="ft-glow" x="-40%" y="-40%" width="180%" height="180%">
+                                <feGaussianBlur stdDeviation="2.2" result="b"/>
+                                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                            </filter>
+                            <!-- silhueta do lutador (desenhada 2x: contorno neon + interior escuro) -->
+                            <g id="ft-fighter">
+                                <animateTransform attributeName="transform" type="translate"
+                                    values="0 0;0 0;-2 0;4 0;4 0;0 0" keyTimes="0;.35;.45;.52;.62;1"
+                                    calcMode="spline" keySplines="0 0 1 1;.4 0 .6 1;.2 .8 .2 1;0 0 1 1;.4 0 .2 1"
+                                    dur="2.4s" repeatCount="indefinite"/>
+                                <!-- respiração na guarda -->
+                                <g>
+                                    <animateTransform attributeName="transform" type="translate" values="0 0;0 1;0 0" dur="1.6s" repeatCount="indefinite"/>
+                                    <circle cx="123" cy="70" r="8.5"/>
+                                    <path d="M111 83 L132 82 L127 118 L110 118 Z"/>
+                                    <!-- braço de trás (guarda junto ao queixo) -->
+                                    <path d="M116 87 L124 104 L131 84" fill="none"/>
+                                    <circle cx="131" cy="84" r="5"/>
+                                    <!-- braço da frente: guarda → antecipação → jab → recuperação -->
+                                    <path d="M127 87 L139 100 L144 83" fill="none">
+                                        <animate attributeName="d"
+                                            values="M127 87 L139 100 L144 83;M127 87 L139 100 L144 83;M127 87 L135 103 L139 89;M127 87 L149 86 L171 85;M127 87 L149 86 L171 85;M127 87 L139 100 L144 83"
+                                            keyTimes="0;.35;.45;.52;.62;1" calcMode="spline"
+                                            keySplines="0 0 1 1;.4 0 .6 1;.2 .8 .2 1;0 0 1 1;.4 0 .2 1"
+                                            dur="2.4s" repeatCount="indefinite"/>
+                                    </path>
+                                    <circle cx="144" cy="83" r="5.5">
+                                        <animate attributeName="cx" values="144;144;139;171;171;144" keyTimes="0;.35;.45;.52;.62;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .6 1;.2 .8 .2 1;0 0 1 1;.4 0 .2 1" dur="2.4s" repeatCount="indefinite"/>
+                                        <animate attributeName="cy" values="83;83;89;85;85;83" keyTimes="0;.35;.45;.52;.62;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .6 1;.2 .8 .2 1;0 0 1 1;.4 0 .2 1" dur="2.4s" repeatCount="indefinite"/>
+                                    </circle>
+                                </g>
+                                <!-- pernas em guarda: trás fletida, frente avançada -->
+                                <path d="M114 117 L101 142 L93 170 L84 171" fill="none"/>
+                                <path d="M124 117 L135 143 L140 170 L150 171" fill="none"/>
+                            </g>
+                        </defs>
+
+                        <rect width="320" height="200" fill="url(#ft-sky)"/>
+                        <!-- estrelas -->
+                        <g fill="#fff" opacity=".7">
+                            <circle cx="30" cy="20" r=".8"/><circle cx="90" cy="34" r=".6"/><circle cx="160" cy="14" r=".7"/>
+                            <circle cx="230" cy="30" r=".6"/><circle cx="296" cy="18" r=".8"/><circle cx="60" cy="58" r=".5"/>
+                        </g>
+                        <!-- sol às riscas -->
+                        <circle cx="255" cy="112" r="40" fill="url(#ft-sun)" mask="url(#ft-sun-cut)" opacity=".95"/>
+                        <!-- montanhas (parallax) -->
+                        <g class="cv-mtn-far">
+                            <path d="M0 150 L30 118 L52 134 L84 104 L118 138 L150 120 L178 150 Z M320 150 L350 118 L372 134 L404 104 L438 138 L470 120 L498 150 Z"/>
+                            <animateTransform attributeName="transform" type="translate" values="0 0;-320 0" dur="40s" repeatCount="indefinite"/>
+                        </g>
+                        <g class="cv-mtn-near">
+                            <path d="M-10 150 L40 128 L76 142 L130 122 L190 146 L240 130 L300 150 Z M310 150 L360 128 L396 142 L450 122 L510 146 L560 130 L620 150 Z"/>
+                            <animateTransform attributeName="transform" type="translate" values="0 0;-320 0" dur="20s" repeatCount="indefinite"/>
+                        </g>
+                        <!-- chão em grelha com perspetiva -->
+                        <rect x="0" y="150" width="320" height="50" fill="#0b0418"/>
+                        <g class="cv-grid">
+                            <path d="M160 150 L-120 200 M160 150 L-40 200 M160 150 L40 200 M160 150 L120 200 M160 150 L200 200 M160 150 L280 200 M160 150 L360 200 M160 150 L440 200"/>
+                            <line x1="0" x2="320" y1="150" y2="150" class="cv-horizon"/>
+                            <line x1="0" x2="320" y1="152" y2="152"><animate attributeName="y1" values="151;200" dur="1.6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".6 0 1 1"/><animate attributeName="y2" values="151;200" dur="1.6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".6 0 1 1"/></line>
+                            <line x1="0" x2="320" y1="152" y2="152"><animate attributeName="y1" values="151;200" dur="1.6s" begin="-.53s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".6 0 1 1"/><animate attributeName="y2" values="151;200" dur="1.6s" begin="-.53s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".6 0 1 1"/></line>
+                            <line x1="0" x2="320" y1="152" y2="152"><animate attributeName="y1" values="151;200" dur="1.6s" begin="-1.06s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".6 0 1 1"/><animate attributeName="y2" values="151;200" dur="1.6s" begin="-1.06s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".6 0 1 1"/></line>
+                        </g>
+                        <!-- sombra no chão -->
+                        <ellipse cx="118" cy="172" rx="34" ry="4" fill="#000" opacity=".5"/>
+                        <!-- saco de boxe -->
+                        <g>
+                            <animateTransform attributeName="transform" type="rotate"
+                                values="0 184 0;0 184 0;10 184 0;-5 184 0;2 184 0;0 184 0"
+                                keyTimes="0;.52;.62;.76;.88;1" dur="2.4s" repeatCount="indefinite"/>
+                            <line x1="184" y1="0" x2="184" y2="38" stroke="#8d93b8" stroke-width="1.5" stroke-dasharray="3 2"/>
+                            <rect x="171" y="38" width="26" height="74" rx="10" class="cv-bag" filter="url(#ft-glow)"/>
+                            <rect x="171" y="52" width="26" height="5" fill="#22e8ff" opacity=".35"/>
+                            <rect x="171" y="94" width="26" height="5" fill="#22e8ff" opacity=".35"/>
+                        </g>
+                        <!-- lutador: contorno neon + interior escuro -->
+                        <use href="#ft-fighter" class="cv-fighter-glow" filter="url(#ft-glow)"/>
+                        <use href="#ft-fighter" class="cv-fighter-body"/>
+                        <!-- impacto -->
+                        <g class="cv-hit" opacity="0">
+                            <path d="M168 85 l-10 -10 M170 72 l-3 -12 M172 98 l-8 10 M166 86 h-14"/>
+                            <text x="196" y="74" class="cv-hit-text">HIT!</text>
+                            <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.52;.53;.62;.72;1" dur="2.4s" repeatCount="indefinite"/>
+                        </g>
+                        <!-- HUD -->
+                        <g class="cv-hud">
+                            <text x="12" y="20" class="cv-hud-label">P1</text>
+                            <rect x="28" y="12" width="90" height="9" rx="2" class="cv-bar-bg"/>
+                            <rect x="29" y="13" width="72" height="7" rx="1.5" class="cv-bar"/>
+                            <rect x="268" y="10" width="40" height="18" rx="3" class="cv-timer-bg"/>
+                            <text x="288" y="23.5" text-anchor="middle" class="cv-timer">60</text>
+                        </g>
+                        <g class="cv-chip cv-chip--magenta">
+                            <rect x="12" y="28" width="66" height="16" rx="3"/>
+                            <text x="45" y="39.5" text-anchor="middle">COMBO ×3</text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="cabinet__panel">
+                    <p>Boxe, muay thai e taekwondo: técnicas, combos e um desafio de 60 segundos contra alvos.</p>
+                    <div class="cabinet__foot">
+                        <ul class="cabinet__meta">
+                            <li>60 segundos</li>
+                            <li>3 artes</li>
+                        </ul>
+                        <span class="cabinet__cta">INSERIR FICHA <span aria-hidden="true">▶</span></span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ===== Máquina 3 — Última Ficha ===== -->
+            <a class="cabinet" href="escape/" style="--accent: var(--cyan)" data-key="3">
+                <div class="cabinet__marquee cabinet__marquee--dual">
+                    <span class="cabinet__num pixel">03</span>
+                    <h2 class="cabinet__title">ÚLTIMA FICHA</h2>
+                </div>
+                <div class="cabinet__screen cover cover--escape" aria-hidden="true">
+                    <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <linearGradient id="es-wall" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#0c0a1e"/>
+                                <stop offset="1" stop-color="#14102c"/>
+                            </linearGradient>
+                            <radialGradient id="es-uv" cx=".5" cy=".5" r=".5">
+                                <stop offset="0" stop-color="#9b5cff" stop-opacity=".45"/>
+                                <stop offset="1" stop-color="#9b5cff" stop-opacity="0"/>
+                            </radialGradient>
+                            <filter id="es-glow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur stdDeviation="1.8" result="b"/>
+                                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                            </filter>
+                            <mask id="es-uv-mask">
+                                <rect width="320" height="200" fill="black"/>
+                                <circle r="30" fill="white">
+                                    <animate attributeName="cx" values="60;180;300;180;60" dur="9s" repeatCount="indefinite"/>
+                                    <animate attributeName="cy" values="150;45;80;130;150" dur="9s" repeatCount="indefinite"/>
+                                </circle>
+                            </mask>
+                        </defs>
+
+                        <rect width="320" height="200" fill="url(#es-wall)"/>
+                        <!-- rodapé e chão aos quadrados -->
+                        <g class="es-floor">
+                            <rect x="0" y="164" width="320" height="36" fill="#0a0816"/>
+                            <path d="M160 164 L-60 200 M160 164 L20 200 M160 164 L100 200 M160 164 L160 200 M160 164 L220 200 M160 164 L300 200 M160 164 L380 200 M0 172 H320 M0 184 H320"/>
+                        </g>
+                        <line x1="0" y1="164" x2="320" y2="164" stroke="#22e8ff" stroke-opacity=".35"/>
+
+                        <!-- letreiro neon a falhar -->
+                        <g filter="url(#es-glow)">
+                            <text x="81" y="57" text-anchor="middle" class="es-sign">ARCADE
+                                <animate attributeName="opacity" values="1;1;.15;1;.3;1;1" keyTimes="0;.6;.62;.64;.66;.68;1" dur="4s" repeatCount="indefinite"/>
+                            </text>
+                        </g>
+
+                        <!-- máquinas de arcade -->
+                        <g class="es-cab">
+                            <path d="M22 164 V78 L30 66 H66 L74 78 V164 Z"/>
+                            <rect x="30" y="70" width="36" height="7" class="es-cab-marquee-c"/>
+                            <rect x="31" y="84" width="34" height="28" class="es-cab-screen-c">
+                                <animate attributeName="opacity" values=".9;.6;.9" dur="1.3s" repeatCount="indefinite"/>
+                            </rect>
+                            <path d="M26 122 H70 L74 132 H22 Z" class="es-cab-panel"/>
+                            <circle cx="40" cy="127" r="2" fill="#ff2bd6"/><circle cx="56" cy="127" r="2" fill="#ffc53d"/>
+                        </g>
+                        <g class="es-cab">
+                            <path d="M88 164 V78 L96 66 H132 L140 78 V164 Z"/>
+                            <rect x="96" y="70" width="36" height="7" class="es-cab-marquee-m"/>
+                            <rect x="97" y="84" width="34" height="28" class="es-cab-screen-m">
+                                <animate attributeName="opacity" values=".7;1;.7" dur="1.7s" repeatCount="indefinite"/>
+                            </rect>
+                            <path d="M92 122 H136 L140 132 H88 Z" class="es-cab-panel"/>
+                            <circle cx="106" cy="127" r="2" fill="#22e8ff"/><circle cx="122" cy="127" r="2" fill="#ff2bd6"/>
+                        </g>
+
+                        <!-- sinal de saída -->
+                        <g filter="url(#es-glow)">
+                            <rect x="214" y="46" width="44" height="14" rx="2" class="es-exit"/>
+                            <text x="236" y="56.5" text-anchor="middle" class="es-exit-text">SAÍDA</text>
+                        </g>
+                        <!-- porta trancada -->
+                        <g class="es-door">
+                            <rect x="210" y="66" width="52" height="98"/>
+                            <rect x="217" y="74" width="38" height="36"/>
+                            <rect x="217" y="118" width="38" height="38"/>
+                            <circle cx="254" cy="118" r="2.2"/>
+                        </g>
+                        <!-- teclado com LED -->
+                        <g class="es-keypad">
+                            <rect x="270" y="100" width="16" height="22" rx="2"/>
+                            <path d="M274 110h2M279 110h2M274 114h2M279 114h2M274 118h2M279 118h2"/>
+                        </g>
+                        <circle cx="278" cy="104" r="2" fill="#ff4d6d" filter="url(#es-glow)">
+                            <animate attributeName="opacity" values="1;.15;1" dur="1s" repeatCount="indefinite"/>
+                        </circle>
+
+                        <!-- luz UV a revelar números escondidos -->
+                        <circle r="30" fill="url(#es-uv)">
+                            <animate attributeName="cx" values="60;180;300;180;60" dur="9s" repeatCount="indefinite"/>
+                            <animate attributeName="cy" values="150;45;80;130;150" dur="9s" repeatCount="indefinite"/>
+                        </circle>
+                        <g mask="url(#es-uv-mask)" class="es-digits" filter="url(#es-glow)">
+                            <text x="150" y="154">4</text>
+                            <text x="166" y="52">7</text>
+                            <text x="186" y="100">1</text>
+                            <text x="298" y="82">9</text>
+                        </g>
+
+                        <!-- ficha no chão a brilhar -->
+                        <g>
+                            <ellipse cx="170" cy="182" rx="7" ry="3" fill="#ffc53d"/>
+                            <ellipse cx="170" cy="181" rx="5" ry="1.8" fill="#ffe27a"/>
+                            <path d="M178 172 l2 4 l4 2 l-4 2 l-2 4 l-2 -4 l-4 -2 l4 -2 Z" fill="#fff">
+                                <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;.15;.3;1" dur="2.5s" repeatCount="indefinite"/>
+                            </path>
+                        </g>
+
+                        <!-- contagem decrescente -->
+                        <g>
+                            <rect x="12" y="10" width="58" height="20" rx="3" class="es-led-bg"/>
+                            <text x="41" y="25" text-anchor="middle" class="es-led" filter="url(#es-glow)">09:59</text>
+                        </g>
+                        <g class="cv-chip">
+                            <rect x="244" y="12" width="64" height="16" rx="3"/>
+                            <text x="276" y="23.5" text-anchor="middle">DICAS 3</text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="cabinet__panel">
+                    <p>Ficaste trancado num salão de arcade. Resolve os enigmas e sai antes de o alarme disparar.</p>
+                    <div class="cabinet__foot">
+                        <ul class="cabinet__meta">
+                            <li>10 minutos</li>
+                            <li>3 dicas</li>
+                        </ul>
+                        <span class="cabinet__cta">INSERIR FICHA <span aria-hidden="true">▶</span></span>
+                    </div>
+                </div>
+            </a>
+
+        </main>
+
+        <footer class="footer">
+            <a class="footer__recordes" href="recordes/">★ Recordes</a> ·
+            Teclas <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> para escolher · Oficina de Multimédia
+        </footer>
+    </div>
+    <script src="geo/vendor/d3.v7.9.0.min.js"></script>
+    <script src="geo/vendor/topojson-client.3.1.0.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

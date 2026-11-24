@@ -1,0 +1,398 @@
+{
+    "continente": "África",
+    "descricao": "id = código ISO 3166-1 numérico (igual ao do mapa). 6 pistas por país, da mais difícil/de nicho para a mais fácil. Só cultura e conhecimento, nunca análise do mapa.",
+    "paises": [
+        { "id": "818", "nome": "Egito", "continente": "África", "pistas": [
+            "O papiro, antepassado do papel, era fabricado aqui.",
+            "Os seus hieróglifos foram decifrados graças à Pedra de Roseta.",
+            "O Canal do Suez, aberto em 1869, atravessa o país.",
+            "Cleópatra foi a última rainha da sua dinastia ptolemaica.",
+            "O futebolista Mohamed Salah nasceu aqui.",
+            "As pirâmides de Gizé e a Esfinge, perto do Cairo."
+        ] },
+        { "id": "504", "nome": "Marrocos", "continente": "África", "pistas": [
+            "A universidade mais antiga do mundo ainda em funcionamento, Al-Qarawiyyin, fica aqui, em Fez.",
+            "O chá de menta é servido de muito alto para fazer espuma.",
+            "Cuscuz e tajine são pratos do dia a dia.",
+            "O filme Casablanca tem o nome de uma das suas cidades.",
+            "Em 2022, foi a primeira seleção africana a chegar às meias-finais de um Mundial.",
+            "Os souks e a praça Jemaa el-Fna, em Marraquexe."
+        ] },
+        { "id": "012", "nome": "Argélia", "continente": "África", "pistas": [
+            "O estilista Yves Saint Laurent nasceu aqui, em Orão.",
+            "O escritor Albert Camus nasceu aqui, quando era colónia francesa.",
+            "Zinedine Zidane é filho de imigrantes deste país.",
+            "A sua guerra de independência contra a França terminou em 1962.",
+            "É o maior país de África em área.",
+            "A capital é Argel."
+        ] },
+        { "id": "788", "nome": "Tunísia", "continente": "África", "pistas": [
+            "A harissa, pasta picante de malaguetas, é daqui.",
+            "O anfiteatro romano de El Jem é um dos maiores do mundo.",
+            "As cenas do planeta Tatooine, de Star Wars, foram filmadas aqui.",
+            "A Primavera Árabe começou aqui, entre 2010 e 2011.",
+            "A antiga Cartago, cidade de Aníbal e rival de Roma, ficava aqui.",
+            "A capital é Tunes."
+        ] },
+        { "id": "434", "nome": "Líbia", "continente": "África", "pistas": [
+            "O Grande Rio Artificial leva água de aquíferos do deserto até às cidades.",
+            "As ruínas romanas de Leptis Magna são Património Mundial.",
+            "Foi colónia italiana até à Segunda Guerra Mundial.",
+            "Mais de 90% do território é deserto.",
+            "Muammar Gaddafi governou o país durante 42 anos.",
+            "A capital é Trípoli."
+        ] },
+        { "id": "729", "nome": "Sudão", "continente": "África", "pistas": [
+            "Tem mais pirâmides do que o Egito: mais de 200, à volta de Meroé.",
+            "A goma-arábica, usada em refrigerantes, vem sobretudo daqui.",
+            "Até 2011 era o maior país de África.",
+            "Em 2011, a região sul separou-se e formou um novo país.",
+            "Os rios Nilo Azul e Nilo Branco juntam-se na sua capital.",
+            "A capital é Cartum."
+        ] },
+        { "id": "728", "nome": "Sudão do Sul", "continente": "África", "pistas": [
+            "O pântano do Sudd é uma das maiores zonas húmidas do mundo.",
+            "O basquetebolista Manute Bol, com 2,31 m, nasceu aqui.",
+            "O povo dinka está entre os mais altos do mundo.",
+            "A bandeira tem uma estrela amarela num triângulo azul.",
+            "É o país mais jovem do mundo, independente desde 2011.",
+            "A capital é Juba."
+        ] },
+        { "id": "231", "nome": "Etiópia", "continente": "África", "pistas": [
+            "Usa um calendário próprio, com 13 meses.",
+            "O imperador Haile Selassie é venerado pelo movimento rastafári.",
+            "Lucy, um fóssil de hominídeo com 3,2 milhões de anos, foi encontrada aqui.",
+            "Segundo a lenda, o café foi descoberto aqui por um pastor chamado Kaldi.",
+            "Abebe Bikila ganhou a maratona olímpica de 1960 descalço.",
+            "A capital, Adis Abeba, é sede da União Africana."
+        ] },
+        { "id": "232", "nome": "Eritreia", "continente": "África", "pistas": [
+            "Um comboio a vapor sobe mais de 2000 m entre a costa e a capital.",
+            "O ciclismo é o desporto mais popular e os ciclistas são heróis nacionais.",
+            "A capital tem tantos edifícios modernistas italianos que é Património Mundial.",
+            "Foi colónia italiana e, mais tarde, parte da Etiópia.",
+            "Tornou-se independente em 1993.",
+            "A capital é Asmara."
+        ] },
+        { "id": "262", "nome": "Djibuti", "continente": "África", "pistas": [
+            "O lago Assal, a 155 m abaixo do nível do mar, é o ponto mais baixo de África.",
+            "Acolhe bases militares de vários países, incluindo a primeira base da China no estrangeiro.",
+            "Chamava-se Território Francês dos Afars e dos Issas.",
+            "Tornou-se independente da França em 1977.",
+            "O seu porto é a principal saída para o mar da Etiópia.",
+            "A capital tem o mesmo nome do país."
+        ] },
+        { "id": "706", "nome": "Somália", "continente": "África", "pistas": [
+            "É conhecida como a «nação de poetas», pela importância da poesia oral.",
+            "Tem a maior população de camelos do mundo.",
+            "O atleta Mo Farah, campeão olímpico, nasceu aqui.",
+            "Tem a costa continental mais longa de África.",
+            "A pirataria ao largo da sua costa foi notícia nos anos 2000.",
+            "A capital é Mogadíscio."
+        ] },
+        { "id": "404", "nome": "Quénia", "continente": "África", "pistas": [
+            "Wangari Maathai, primeira mulher africana Nobel da Paz, nasceu aqui.",
+            "O pai de Barack Obama nasceu aqui.",
+            "O povo maasai é famoso pelas suas danças de saltos.",
+            "Eliud Kipchoge, bicampeão olímpico da maratona, nasceu aqui.",
+            "Safaris na reserva Maasai Mara, durante a grande migração dos gnus.",
+            "A capital é Nairobi."
+        ] },
+        { "id": "800", "nome": "Uganda", "continente": "África", "pistas": [
+            "Churchill chamou-lhe a «Pérola de África».",
+            "O explorador Speke identificou aqui a nascente do Nilo, em 1862.",
+            "Tem cerca de metade dos gorilas-das-montanhas do mundo.",
+            "O ditador Idi Amin governou-o nos anos 70.",
+            "A bandeira tem riscas pretas, amarelas e vermelhas e um grou-coroado.",
+            "A capital é Kampala."
+        ] },
+        { "id": "834", "nome": "Tanzânia", "continente": "África", "pistas": [
+            "A garganta de Olduvai é um dos sítios mais importantes para o estudo da origem humana.",
+            "O suaíli é a língua nacional; «hakuna matata» quer dizer «sem problemas».",
+            "Freddie Mercury, dos Queen, nasceu em Zanzibar, que hoje pertence a este país.",
+            "O Parque Nacional do Serengeti é famoso pelos leões e gnus.",
+            "Aqui fica o Kilimanjaro, a montanha mais alta de África.",
+            "A maior cidade é Dar es Salaam; a capital oficial é Dodoma."
+        ] },
+        { "id": "646", "nome": "Ruanda", "continente": "África", "pistas": [
+            "Proibiu os sacos de plástico em 2008, muito antes da maioria dos países.",
+            "No último sábado de cada mês, a população faz trabalho comunitário, o umuganda.",
+            "Tem a maior percentagem de mulheres num parlamento em todo o mundo.",
+            "É chamado o «país das mil colinas».",
+            "Em 1994 sofreu um genocídio que matou cerca de 800 000 pessoas.",
+            "A capital é Kigali."
+        ] },
+        { "id": "108", "nome": "Burundi", "continente": "África", "pistas": [
+            "A dança ritual do tambor real é Património Imaterial da Humanidade.",
+            "Café e chá são as principais exportações.",
+            "O lago Tanganica, um dos mais profundos do mundo, banha a sua maior cidade.",
+            "Formava com o vizinho Ruanda uma colónia belga chamada Ruanda-Urundi.",
+            "Está muitas vezes entre os países mais pobres do mundo em PIB por habitante.",
+            "A capital é Gitega; antes era Bujumbura."
+        ] },
+        { "id": "180", "nome": "República Democrática do Congo", "continente": "África", "pistas": [
+            "Produz cerca de 70% do cobalto do mundo, essencial para baterias.",
+            "O combate «Rumble in the Jungle», entre Ali e Foreman, foi aqui, em 1974.",
+            "A rumba congolesa é Património Imaterial da Humanidade.",
+            "Foi propriedade pessoal do rei Leopoldo II da Bélgica.",
+            "Chamou-se Zaire entre 1971 e 1997.",
+            "A capital é Kinshasa, a maior cidade francófona do mundo."
+        ] },
+        { "id": "178", "nome": "República do Congo", "continente": "África", "pistas": [
+            "O petróleo é de longe a principal exportação.",
+            "O Parque Nacional de Odzala é refúgio de gorilas-ocidentais.",
+            "Os «sapeurs» são famosos por vestirem fatos elegantes e coloridos.",
+            "A sua capital foi a capital da França Livre durante a Segunda Guerra Mundial.",
+            "Costuma ser chamado Congo-Brazzaville, para não o confundir com o vizinho.",
+            "A capital é Brazzaville."
+        ] },
+        { "id": "266", "nome": "Gabão", "continente": "África", "pistas": [
+            "Cerca de 85% do território é floresta tropical.",
+            "Tem a maior população de elefantes-da-floresta do mundo.",
+            "Albert Schweitzer fundou um hospital em Lambaréné e ganhou o Nobel da Paz.",
+            "O avançado Pierre-Emerick Aubameyang representa a sua seleção.",
+            "A família Bongo governou o país de 1967 a 2023.",
+            "A capital é Libreville."
+        ] },
+        { "id": "226", "nome": "Guiné Equatorial", "continente": "África", "pistas": [
+            "A ilha de Annobón fica a centenas de quilómetros do resto do país.",
+            "O petróleo, descoberto nos anos 90, transformou a economia.",
+            "O nadador «Eric, a Enguia» ficou famoso nos Jogos de Sydney 2000.",
+            "A capital fica numa ilha, Bioko, e não no continente.",
+            "É o único país de África com o espanhol como língua oficial.",
+            "A capital é Malabo."
+        ] },
+        { "id": "120", "nome": "Camarões", "continente": "África", "pistas": [
+            "É chamado «África em miniatura», pela diversidade de paisagens.",
+            "Fala mais de 200 línguas, e as oficiais são o francês e o inglês.",
+            "Em 1990 foi a primeira seleção africana a chegar aos quartos de final de um Mundial.",
+            "Roger Milla celebrava os golos a dançar junto à bandeirola de canto.",
+            "Samuel Eto'o nasceu aqui.",
+            "A capital é Iaundé."
+        ] },
+        { "id": "140", "nome": "República Centro-Africana", "continente": "África", "pistas": [
+            "Os aka, povo pigmeu, vivem nas suas florestas.",
+            "A reserva de Dzanga-Sangha é famosa pelos elefantes e gorilas.",
+            "O seu líder Bokassa coroou-se imperador em 1977.",
+            "Tem diamantes e ouro, mas é um dos países mais pobres do mundo.",
+            "O nome do país descreve a sua posição no continente.",
+            "A capital é Bangui."
+        ] },
+        { "id": "148", "nome": "Chade", "continente": "África", "pistas": [
+            "Foi aqui encontrado Toumaï, um dos hominídeos mais antigos, com 7 milhões de anos.",
+            "O maciço do Tibesti tem o ponto mais alto do Saara.",
+            "No festival gerewol, os homens wodaabe competem num concurso de beleza.",
+            "O lago que dá nome ao país encolheu cerca de 90% desde os anos 60.",
+            "Francês e árabe são as línguas oficiais.",
+            "A capital é N'Djamena."
+        ] },
+        { "id": "562", "nome": "Níger", "continente": "África", "pistas": [
+            "A cruz de Agadez, joia dos tuaregues, tornou-se um símbolo internacional.",
+            "No festival Cure Salée, pastores tuaregues e wodaabe celebram o fim das chuvas.",
+            "Tem algumas das maiores reservas de urânio de África.",
+            "Tem uma das taxas de natalidade mais altas do mundo.",
+            "O nome vem do grande rio que o atravessa.",
+            "A capital é Niamey."
+        ] },
+        { "id": "466", "nome": "Mali", "continente": "África", "pistas": [
+            "Mansa Musa, imperador medieval daqui, é considerado um dos homens mais ricos da história.",
+            "Os músicos Ali Farka Touré e Salif Keita nasceram aqui.",
+            "A Grande Mesquita de Djenné é o maior edifício de adobe do mundo.",
+            "Os manuscritos antigos de Tombuctu foram salvos da destruição em 2012.",
+            "A lendária cidade de Tombuctu fica aqui.",
+            "A capital é Bamako."
+        ] },
+        { "id": "478", "nome": "Mauritânia", "continente": "África", "pistas": [
+            "A cidade antiga de Chinguetti guarda bibliotecas de manuscritos no deserto.",
+            "Um dos comboios mais longos do mundo transporta minério de ferro pelo Saara.",
+            "O «Olho do Saara», uma estrutura circular com 40 km, vê-se do espaço.",
+            "Foi o último país do mundo a abolir oficialmente a escravatura, em 1981.",
+            "É uma república islâmica onde a maior parte do território é deserto.",
+            "A capital é Nouakchott."
+        ] },
+        { "id": "686", "nome": "Senegal", "continente": "África", "pistas": [
+            "O seu primeiro presidente, Léopold Senghor, era também poeta.",
+            "O cantor Youssou N'Dour nasceu aqui.",
+            "O thieboudienne, arroz com peixe, é Património Imaterial da Humanidade.",
+            "A ilha de Gorée é um memorial do tráfico de escravos.",
+            "O futebolista Sadio Mané nasceu aqui.",
+            "A capital, Dakar, era a meta do Rali Paris-Dakar."
+        ] },
+        { "id": "270", "nome": "Gâmbia", "continente": "África", "pistas": [
+            "Os habitantes chamam-lhe «a costa sorridente de África».",
+            "No livro Raízes, Kunta Kinte é levado daqui como escravo.",
+            "Tornou-se independente do Reino Unido em 1965.",
+            "O nome vem do rio que o atravessa.",
+            "É o país mais pequeno de África continental.",
+            "A capital é Banjul."
+        ] },
+        { "id": "624", "nome": "Guiné-Bissau", "continente": "África", "pistas": [
+            "No arquipélago dos Bijagós há hipopótamos que nadam em água salgada.",
+            "O caju é de longe a principal exportação.",
+            "Amílcar Cabral liderou a luta pela independência.",
+            "Declarou a independência em 1973, reconhecida por Portugal em 1974.",
+            "Foi colónia portuguesa; fala-se português e muito crioulo.",
+            "A capital é Bissau."
+        ] },
+        { "id": "324", "nome": "Guiné", "continente": "África", "pistas": [
+            "Tem cerca de um quarto das reservas mundiais de bauxite.",
+            "Os rios Níger, Senegal e Gâmbia nascem nas suas montanhas.",
+            "Les Ballets Africains, a sua companhia de dança, é famosa em todo o mundo.",
+            "Foi a única colónia francesa a votar «não» em 1958, e tornou-se logo independente.",
+            "O futebolista Naby Keïta nasceu aqui.",
+            "A capital é Conacri."
+        ] },
+        { "id": "694", "nome": "Serra Leoa", "continente": "África", "pistas": [
+            "O krio, uma língua crioula de base inglesa, é a mais falada.",
+            "A capital foi fundada para acolher escravos libertados.",
+            "O filme Diamante de Sangue passa-se aqui.",
+            "Sofreu uma epidemia de ébola entre 2014 e 2016.",
+            "O nome foi-lhe dado por navegadores portugueses no século XV.",
+            "A capital é Freetown."
+        ] },
+        { "id": "430", "nome": "Libéria", "continente": "África", "pistas": [
+            "Ellen Johnson Sirleaf, primeira mulher eleita presidente em África, governou aqui.",
+            "Nunca foi colonizada por europeus.",
+            "Foi fundada por escravos libertados vindos dos Estados Unidos.",
+            "George Weah, Bola de Ouro em 1995, foi depois presidente do país.",
+            "A bandeira é parecida com a dos EUA, mas com uma só estrela.",
+            "A capital, Monróvia, tem o nome de um presidente americano."
+        ] },
+        { "id": "384", "nome": "Costa do Marfim", "continente": "África", "pistas": [
+            "O coupé-décalé, música e dança, nasceu com a sua diáspora.",
+            "A basílica de Nossa Senhora da Paz inspira-se na de São Pedro, no Vaticano.",
+            "É o maior produtor mundial de cacau.",
+            "Didier Drogba ajudou a pedir o fim da guerra civil em 2005.",
+            "O nome do país vem do antigo comércio de marfim.",
+            "A capital oficial é Yamoussoukro; a maior cidade é Abidjan."
+        ] },
+        { "id": "288", "nome": "Gana", "continente": "África", "pistas": [
+            "O kente é um tecido colorido, feito em tiras, típico deste país.",
+            "O lago Volta é um dos maiores lagos artificiais do mundo.",
+            "Tornou-se independente em 1957, liderado por Kwame Nkrumah.",
+            "É um dos maiores produtores de cacau do mundo.",
+            "Kofi Annan, secretário-geral da ONU, nasceu aqui.",
+            "Chamava-se Costa do Ouro; a capital é Acra."
+        ] },
+        { "id": "768", "nome": "Togo", "continente": "África", "pistas": [
+            "O fosfato é uma das principais exportações.",
+            "Koutammakou, terra das casas-torre de barro, é Património Mundial.",
+            "Foi colónia alemã até à Primeira Guerra Mundial.",
+            "O mercado de Akodessewa vende ingredientes para rituais de vodu.",
+            "O avançado Emmanuel Adebayor nasceu aqui.",
+            "A capital é Lomé."
+        ] },
+        { "id": "204", "nome": "Benim", "continente": "África", "pistas": [
+            "O vodu nasceu aqui e tem feriado nacional a 10 de janeiro.",
+            "Ganvié é uma aldeia construída sobre estacas num lago.",
+            "Ouidah foi um dos maiores portos do tráfico de escravos.",
+            "As guerreiras do antigo reino daqui inspiraram o filme A Mulher Rei.",
+            "Chamava-se Daomé até 1975.",
+            "A capital oficial é Porto-Novo, nome dado pelos portugueses."
+        ] },
+        { "id": "854", "nome": "Burkina Faso", "continente": "África", "pistas": [
+            "A grande mesquita de Bobo-Dioulasso é feita de barro.",
+            "O nome do país significa «terra dos homens íntegros».",
+            "Organiza o FESPACO, o maior festival de cinema africano.",
+            "Thomas Sankara, presidente revolucionário, mudou o nome do país em 1984.",
+            "Chamava-se Alto Volta.",
+            "A capital é Ouagadougou."
+        ] },
+        { "id": "566", "nome": "Nigéria", "continente": "África", "pistas": [
+            "As cabeças de bronze de Ifé e os bronzes do Benim vêm daqui.",
+            "Chinua Achebe, autor do romance Things Fall Apart, nasceu aqui.",
+            "Fela Kuti criou o afrobeat neste país.",
+            "Nollywood, a sua indústria de cinema, é uma das que mais filmes produz no mundo.",
+            "É o país mais populoso de África.",
+            "A maior cidade é Lagos; a capital é Abuja."
+        ] },
+        { "id": "024", "nome": "Angola", "continente": "África", "pistas": [
+            "A welwitschia, planta que pode viver mais de mil anos, cresce no seu deserto.",
+            "As quedas de Kalandula estão entre as maiores de África.",
+            "O semba, antepassado do samba, nasceu aqui.",
+            "A kizomba nasceu aqui nos anos 80.",
+            "Foi colónia portuguesa até 1975; Agostinho Neto foi o primeiro presidente.",
+            "A capital é Luanda."
+        ] },
+        { "id": "516", "nome": "Namíbia", "continente": "África", "pistas": [
+            "Foi dos primeiros países a inscrever a proteção do ambiente na Constituição.",
+            "Foi colónia alemã, e cidades como Swakopmund ainda têm arquitetura alemã.",
+            "A Costa dos Esqueletos é famosa pelos naufrágios.",
+            "As dunas vermelhas de Sossusvlei estão entre as mais altas do mundo.",
+            "Tornou-se independente da África do Sul em 1990.",
+            "A capital é Windhoek."
+        ] },
+        { "id": "072", "nome": "Botsuana", "continente": "África", "pistas": [
+            "Os livros da «Agência N.º 1 de Mulheres Detetives» passam-se aqui.",
+            "O delta do Okavango é um delta interior que nunca chega ao mar.",
+            "Tem a maior população de elefantes do mundo.",
+            "É um dos maiores produtores de diamantes do mundo em valor.",
+            "Chamava-se Bechuanalândia e tornou-se independente em 1966.",
+            "A capital é Gaborone."
+        ] },
+        { "id": "716", "nome": "Zimbabué", "continente": "África", "pistas": [
+            "Ruínas de pedra medievais, de uma grande cidade antiga, deram nome ao país.",
+            "Em 2008 a inflação foi tão alta que se imprimiram notas de 100 biliões.",
+            "Robert Mugabe governou de 1980 a 2017.",
+            "Chamava-se Rodésia.",
+            "As Cataratas Vitória, das maiores do mundo, ficam na sua fronteira com a Zâmbia.",
+            "A capital é Harare."
+        ] },
+        { "id": "894", "nome": "Zâmbia", "continente": "África", "pistas": [
+            "Kenneth Kaunda foi o seu primeiro presidente, de 1964 a 1991.",
+            "A região do Copperbelt faz dele um dos maiores produtores de cobre de África.",
+            "Na Devil's Pool pode nadar-se à beira das Cataratas Vitória.",
+            "Chamava-se Rodésia do Norte.",
+            "O nome vem do rio Zambeze.",
+            "A capital é Lusaka."
+        ] },
+        { "id": "454", "nome": "Malawi", "continente": "África", "pistas": [
+            "É chamado «o coração quente de África».",
+            "O seu grande lago tem mais espécies de peixes do que qualquer outro lago do mundo.",
+            "Tornou-se independente do Reino Unido em 1964.",
+            "A cantora Madonna adotou crianças deste país.",
+            "Chamava-se Niassalândia.",
+            "A capital é Lilongwe."
+        ] },
+        { "id": "508", "nome": "Moçambique", "continente": "África", "pistas": [
+            "A marrabenta é o género musical mais popular.",
+            "O escritor Mia Couto nasceu aqui, na Beira.",
+            "É o único país com uma espingarda AK-47 na bandeira.",
+            "Eusébio, a «Pantera Negra» do Benfica, nasceu aqui.",
+            "Foi colónia portuguesa até 1975; Samora Machel foi o primeiro presidente.",
+            "A capital é Maputo, antiga Lourenço Marques."
+        ] },
+        { "id": "450", "nome": "Madagáscar", "continente": "África", "pistas": [
+            "Cerca de 90% da sua fauna e flora não existe em mais lado nenhum.",
+            "É o maior produtor mundial de baunilha.",
+            "A Avenida dos Baobás é uma das suas paisagens mais fotografadas.",
+            "Os lémures só existem aqui na natureza.",
+            "Deu nome a um filme de animação de 2005 com um leão, uma zebra, uma girafa e um hipopótamo.",
+            "A capital é Antananarivo."
+        ] },
+        { "id": "710", "nome": "África do Sul", "continente": "África", "pistas": [
+            "Tem 12 línguas oficiais.",
+            "O primeiro transplante de coração do mundo fez-se aqui, em 1967.",
+            "O regime do apartheid terminou aqui em 1994.",
+            "Organizou o Mundial de 2010, o das vuvuzelas.",
+            "Tem três capitais, entre elas Pretória e a Cidade do Cabo.",
+            "Nelson Mandela foi o seu primeiro presidente eleito democraticamente."
+        ] },
+        { "id": "426", "nome": "Lesoto", "continente": "África", "pistas": [
+            "Cobertores de lã são usados como roupa tradicional.",
+            "Tem uma estância de esqui, a Afriski.",
+            "É uma monarquia, com o rei Letsie III.",
+            "É o único país do mundo inteiramente acima de 1000 m de altitude.",
+            "O chapéu cónico tradicional aparece na bandeira.",
+            "A capital é Maseru."
+        ] },
+        { "id": "748", "nome": "Essuatíni", "continente": "África", "pistas": [
+            "Na cerimónia Umhlanga, a dança do junco, participam milhares de jovens mulheres.",
+            "O rei Mswati III reina desde 1986.",
+            "É uma das últimas monarquias absolutas do mundo.",
+            "Mudou de nome em 2018.",
+            "Chamava-se Suazilândia.",
+            "A capital administrativa é Mbabane."
+        ] }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "continente": "Oceânia",
+    "descricao": "id = código ISO 3166-1 numérico (igual ao do mapa). 6 pistas por país, da mais difícil/de nicho para a mais fácil.",
+    "paises": [
+        { "id": "036", "nome": "Austrália", "continente": "Oceânia", "pistas": [
+            "A tecnologia por trás do wi-fi deve muito a investigadores de uma agência científica daqui.",
+            "O didgeridoo é um instrumento de sopro dos povos aborígenes.",
+            "O bumerangue foi usado aqui para caçar.",
+            "A Grande Barreira de Coral é a maior estrutura viva do mundo.",
+            "Cangurus e coalas.",
+            "A Ópera de Sydney."
+        ] },
+        { "id": "554", "nome": "Nova Zelândia", "continente": "Oceânia", "pistas": [
+            "Foi o primeiro país a dar o direito de voto às mulheres, em 1893.",
+            "Edmund Hillary, que subiu ao Evereste com Tenzing, nasceu aqui.",
+            "O bungee jumping comercial começou aqui, em 1988.",
+            "A trilogia O Senhor dos Anéis foi filmada aqui.",
+            "O kiwi, uma ave que não voa, é o símbolo nacional.",
+            "A seleção de râguebi, os All Blacks, dança a haka antes de cada jogo."
+        ] },
+        { "id": "598", "nome": "Papua-Nova Guiné", "continente": "Oceânia", "pistas": [
+            "Os «homens de lama» de Asaro usam máscaras de barro assustadoras.",
+            "No festival de Goroka, dezenas de tribos exibem pinturas e penas.",
+            "O tok pisin, um crioulo de base inglesa, é língua oficial.",
+            "Falam-se aqui mais de 800 línguas, mais do que em qualquer outro país.",
+            "A bandeira tem uma ave-do-paraíso dourada.",
+            "A capital é Port Moresby."
+        ] },
+        { "id": "242", "nome": "Fiji", "continente": "Oceânia", "pistas": [
+            "O kava, bebida feita de raiz, é partilhado em cerimónias.",
+            "Cerca de um terço da população tem origem indiana.",
+            "Ganhou a primeira medalha de ouro olímpica no râguebi de sete, em 2016.",
+            "«Bula!» é o cumprimento que se ouve em todo o lado.",
+            "É um arquipélago com mais de 300 ilhas no Pacífico.",
+            "A capital é Suva."
+        ] },
+        { "id": "090", "nome": "Ilhas Salomão", "continente": "Oceânia", "pistas": [
+            "Colares de conchas ainda são usados como moeda em cerimónias tradicionais.",
+            "John F. Kennedy naufragou aqui em 1943, no barco PT-109.",
+            "Foi palco da batalha de Guadalcanal, na Segunda Guerra Mundial.",
+            "Um explorador espanhol deu-lhe o nome de um rei bíblico.",
+            "É um arquipélago com quase mil ilhas no Pacífico.",
+            "A capital é Honiara."
+        ] },
+        { "id": "548", "nome": "Vanuatu", "continente": "Oceânia", "pistas": [
+            "Num índice de 2006, foi considerado o país mais feliz do mundo.",
+            "O naghol, salto de torres de madeira preso por lianas, inspirou o bungee jumping.",
+            "Até 1980 foi governado em conjunto por britânicos e franceses.",
+            "Do vulcão Yasur, ativo, vê-se a lava de perto.",
+            "Chamava-se Novas Hébridas.",
+            "A capital é Port Vila."
+        ] }
+    ]
+}
